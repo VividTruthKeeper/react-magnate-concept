@@ -19,8 +19,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
       </Routes>
-      <Footer />
+      {/* I put these 2 componenets outside of Routes because they are displayed on all pages. */}
       <ContactUs />
+      <Footer />
     </div>
   );
 }

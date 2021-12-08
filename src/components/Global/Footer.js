@@ -1,13 +1,16 @@
 // IMPORT MODULES
 import React from "react";
 
+// IMPORT IMAGES
+import Logo from '../../images/main_logo.jpg';
+
 // IMPORT SVG
-import Logo from '../../svg/main_logo.svg';
 import Instagram from '../../svg/icon_instagram.svg';
 
 const Footer = () => {
     return(
         <footer className="footer">
+            {/* A special div to make line horizontal line deco. I found it best among other possibilities. */}
             <div className="deco-horizontal"></div>
             <div className="container">
                 <div className="footer-inner">

@@ -1,0 +1,106 @@
+.contact__us{
+    padding-bottom: 12rem;
+}
+
+.contact__us-inner{
+    background-image: url('../images/contact_us_bg.jpg');
+    background-position: center;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 72rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact__us__form{
+    padding: 5rem;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    max-width: 56rem;
+    max-height: 54.6rem;
+    border-radius: 1rem;
+    margin-right: 10rem;
+}
+
+.form-head{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    position: relative;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 0.4rem;
+        height: 5.6rem;
+        background: #EF4B62;
+        left: 0rem;
+        top: 0;
+        border-radius: 1rem;
+    }
+
+    label{
+        cursor: pointer;
+    }
+}
+
+.head-small{
+    font-size: 1.4rem;
+    color: #EF4B62;
+}
+
+.head-big{
+    font-size: 3.2rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0 2rem 0;
+
+    input{
+        width: 100%;
+        border: none;
+        padding: 1.6rem 3rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+        border-radius: 1rem;
+        outline-color: #EF4B62;
+        cursor: pointer;
+    }
+
+    textarea{
+        width: 100%;
+        border: none;
+        padding: 1.6rem 3rem;
+        resize: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+        border-radius: 1rem;
+        outline-color: #EF4B62;
+        cursor: pointer;
+    }
+}
+
+.form-submit{
+    button{
+        width: 100%;
+        padding: 1.6rem 0;
+        border: none;
+        border-radius: 1rem;
+        background: #EF4B62;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+}
