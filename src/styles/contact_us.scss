@@ -39,7 +39,7 @@
         display: block;
         width: 0.4rem;
         height: 5.6rem;
-        background: #EF4B62;
+        background: $base-pink;
         left: 0rem;
         top: 0;
         border-radius: 1rem;
@@ -52,7 +52,7 @@
 
 .head-small{
     font-size: 1.4rem;
-    color: #EF4B62;
+    color: $base-pink;
 }
 
 .head-big{
@@ -98,7 +98,7 @@
         padding: 1.6rem 0;
         border: none;
         border-radius: 1rem;
-        background: #EF4B62;
+        background: $base-pink;
         color: #fff;
         font-size: 1.6rem;
         cursor: pointer;

@@ -1,8 +1,6 @@
 // IMPORT MODULES
 import React from "react";
 
-// IMPORT IMAGES
-import Bg from "../../images/contact_us_bg.jpg";
 
 const ContactUs = () => {
     return(
