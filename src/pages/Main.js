@@ -11,9 +11,10 @@ import BigNav from "../components/Global/BigNav";
 const Main = () => {
     return(
         <div className="main">
+            <BigNav title={""} text={""} />
             <div className="container">
                 <div className="main-inner">
-                    <BigNav title={""} text={""} />
+
                 </div>
             </div>
         </div>

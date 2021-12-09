@@ -47,23 +47,10 @@
         object-fit: contain;
     }
 
-    &::after{
-        content: "";
-        display: block;
-        height: 5rem;
-        position: absolute; 
-        width: 9.8rem;
-        border-left: 0.1rem solid rgba(254, 254, 254, 0.3);
-        border-right: 0.1rem solid rgba(254, 254, 254, 0.3);
-        top: -50%;
-        left: 0;
-        pointer-events: none;
-    }
-
     &::before{
         content: "";
         display: block;
-        height: 5rem;
+        height: 20rem;
         position: absolute; 
         width: 9.8rem;
         border-left: 0.1rem solid rgba(254, 254, 254, 0.3);

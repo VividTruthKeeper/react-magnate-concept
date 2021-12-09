@@ -1,0 +1,54 @@
+.nav{
+    min-height: 90rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../images/main_banner_1.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 12rem;
+
+
+    .logo{
+        &::before{
+            height: 90rem;
+            bottom: -63.1rem;
+        }
+        &::after{
+            display: none;
+        }
+    }
+}
+
+.nav__inner{
+    padding: 5rem 0 0rem 0;
+}
+
+.nav__inner__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__right{
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        list-style-type: none;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.nav__inner__bottom{
+    padding-top: 10rem;
+    // padding-left: ;
+    // display: flex;
+    // align-items: center;
+    // justify-content: flex-start;
+}

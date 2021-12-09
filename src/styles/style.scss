@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 // IMPORT VARIABLES
-@import './variables.scss';
+@import './_variables.scss';
 
 // IMPORT PARTIALS
-@import './nullifier.scss';
-@import './general.scss';
-@import './footer.scss';
-@import './contact_us.scss'
+@import './_nullifier.scss';
+@import './_general.scss';
+@import './_footer.scss';
+@import './_contact_us.scss';
+@import './slider';
+@import './nav';
