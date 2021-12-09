@@ -1,5 +1,5 @@
 // IMPORT MODULES
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 // IMPORT COMPONENTS
@@ -8,7 +8,7 @@ import Slider from "../Main/Slider";
 // IMPORT IMAGES
 import Logo from '../../images/main_logo.jpg'
 
-const BigNav = ({title, text}) => {
+const BigNav = () => {
     return(
         // <Slider />
         <nav className="nav">
@@ -34,10 +34,10 @@ const BigNav = ({title, text}) => {
                             </ul>
                         </div>
                     </div>
-                    <div className="nav__inner__bottom">
-                        <Slider />
-                    </div>
                 </div>
+            </div>
+            <div className="nav__inner__bottom">
+                <Slider />
             </div>
         </nav>
 

@@ -1,5 +1,5 @@
 // IMPORT MODULES
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 // IMPORT SWIPER MODULES
@@ -9,7 +9,7 @@ import { Navigation, Pagination, A11y, Autoplay } from "swiper";
 // IMPORT SWIPER STYLES
 import "swiper/swiper.scss";
 
-const Slider = ({sliderTitle, sliderText}) => {
+const Slider = () => {
   return(
     <div className="slider">
         <Swiper
@@ -24,6 +24,7 @@ const Slider = ({sliderTitle, sliderText}) => {
           noSwipingClass='swiper-slide'
         >
           <SwiperSlide>
+
             <div className="slider-img">
               <div className="slider__slide">
                 <div className="slide__top">

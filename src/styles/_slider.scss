@@ -2,6 +2,10 @@
     background: transparent;
     max-width: 61rem;
     min-height: 39rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3rem;
 }
 
 .slide__top{
@@ -12,7 +16,6 @@
     justify-content: flex-start;
     text-align: left;
     gap: 1rem;
-    padding-bottom: 3rem;
 
     h6{
         color: #fff;
@@ -62,8 +65,87 @@
     }
 }
 .slider-img{
+    min-height: 50rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 10rem;
 }
+
+.swiper{
+    position: relative;
+
+    .swiper-button-prev{
+        content: url('../svg/slider_arrow_left.svg');
+        padding: 2rem 1.3rem;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        top: 40%;
+        left: 6rem;
+        cursor: pointer;
+        z-index: 2;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(1rem);
+        transition: background 0.2s ease;
+
+        &:hover{
+            background: rgba(151, 151, 151, 0.1);
+            transition: all 0.2s ease;
+        }
+    }
+
+    .swiper-button-next{
+        content: url('../svg/slider_arrow_right.svg');
+        padding: 2rem 1.3rem;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        top: 40%;
+        right: 6rem;
+        cursor: pointer;
+        z-index: 2;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(1rem);
+        transition: background 0.2s ease;
+
+        &:hover{
+            background: rgba(151, 151, 151, 0.1);
+            transition: all 0.2s ease;
+        }
+    }
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 2rem;
+    right: 10rem;
+    transform: translate(-50%, 0%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    border-radius: 1rem;
+    height: 2rem;
+    padding: 0 2rem;
+
+    .swiper-pagination-bullet {
+      border: 0.1rem solid;
+      border-color: rgba(255, 255, 255, 0.3);
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+      border: none;
+      background: #fff;
+      transition: all 0.3s ease;
+    }
+  }
