@@ -2,12 +2,10 @@
     padding-bottom: 12rem;
 }
 
-.contact__us-inner{
-    background-image: url('../images/contact_us_bg.jpg');
+.contact__us-inner{ 
     background-position: center;
-    background-clip: content-box;
     background-repeat: no-repeat;
-    background-size: contain;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/contact_us_bg.jpg');
     min-height: 72rem;
     border-radius: 1rem;
     display: flex;
@@ -24,6 +22,7 @@
     max-height: 54.6rem;
     border-radius: 1rem;
     margin-right: 10rem;
+    backdrop-filter: blur(1rem);
 }
 
 .form-head{
@@ -76,7 +75,7 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 1.6rem;
         border-radius: 1rem;
-        outline-color: #EF4B62;
+        outline: none;  
         cursor: pointer;
     }
 
@@ -88,7 +87,7 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 1.6rem;
         border-radius: 1rem;
-        outline-color: #EF4B62;
+        outline: none;
         cursor: pointer;
     }
 }
@@ -102,5 +101,6 @@
         background: #EF4B62;
         color: #fff;
         font-size: 1.6rem;
+        cursor: pointer;
     }
 }
