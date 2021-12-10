@@ -6,7 +6,7 @@ import SectionTitle from "../Global/SectionTitle";
 
 const ServiceSection = () => {
   return (
-    <div className="service-section-outer">
+    <section className="service-section-outer">
       <div className="container">
         <SectionTitle title={"Узнайте что мы можем"} bigTitle="Наши услуги" />
       </div>
@@ -54,7 +54,7 @@ const ServiceSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
