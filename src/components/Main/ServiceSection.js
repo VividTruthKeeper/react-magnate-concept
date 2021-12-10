@@ -1,10 +1,22 @@
 // IMPORT MODULES
-import React from "react";
+import React, { UseRef, useEffect } from "react";
+// import { useInView } from "react-intersection-observer";
 
 // IMPORT GLOBAL COMPONENTS
 import SectionTitle from "../Global/SectionTitle";
 
 const ServiceSection = () => {
+  // const [ref2, inView2] = useInView({
+  //   threshold: 0.3,
+  // });
+  // const service = UseRef();
+  // useEffect(() => {
+  //   if (inView2) {
+  //     service.current.style.transform = "scale(1)";
+  //     service.current.style.opacity = "1";
+  //     service.current.style.transition = "0.5s all ease";
+  //   }
+  // }, [inView2]);
   return (
     <section className="service-section-outer">
       <div className="container">

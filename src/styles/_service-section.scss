@@ -1,4 +1,7 @@
 .service-section {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: 0.5s all ease-in-out;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-clip: content-box;

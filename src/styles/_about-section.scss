@@ -1,7 +1,6 @@
 .about-section {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: space-between;
+  transform: scale(0.5);
+  opacity: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
