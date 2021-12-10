@@ -1,13 +1,14 @@
 // IMPORT FONTS
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 // IMPORT VARIABLES
-@import './_variables.scss';
+@import "./_variables.scss";
 
 // IMPORT PARTIALS
-@import './_nullifier.scss';
-@import './_general.scss';
-@import './_footer.scss';
-@import './_contact_us.scss';
-@import './slider';
-@import './nav';
+@import "./_nullifier.scss";
+@import "./_general.scss";
+@import "./_footer.scss";
+@import "./_contact_us.scss";
+@import "./slider";
+@import "./nav";
+@import "./bg-slider";

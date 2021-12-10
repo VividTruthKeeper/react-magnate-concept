@@ -1,0 +1,41 @@
+.bg-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.slider-img_1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/main_banner_1.jpg");
+}
+
+.slider-img_2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/main_banner_2.jpg");
+}
+
+.slider-img_3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/main_banner_3.jpg");
+}
+
+.slider-img_4 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/main_banner_4.jpg");
+}
+
+.slider-img_1,
+.slider-img_2,
+.slider-img_3,
+.slider-img_4 {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+  min-height: 78rem;
+  //   height: 100%;
+  width: 100%;
+  display: block;
+}

@@ -1,5 +1,5 @@
 // IMPORT MODULES
-import React, { useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 // IMPORT SWIPER MODULES
@@ -10,111 +10,122 @@ import { Navigation, Pagination, A11y, Autoplay } from "swiper";
 import "swiper/swiper.scss";
 
 const Slider = () => {
-  return(
+  return (
     <div className="slider">
-        <Swiper
-          // install Swiper modules
-          modules={[Navigation, Pagination, A11y, Autoplay]}
-          autoplay={({ delay: 3000 }, { disableOnInteraction: false })}
-          spaceBetween={0}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          loop={true}
-          noSwipingClass='swiper-slide'
-        >
-          <SwiperSlide>
-
-            <div className="slider-img">
-              <div className="slider__slide">
-                <div className="slide__top">
-                  <h6>Прямиком из Италии</h6>
-                  <h2>Персональный заказ и установка широкоформатных керамо-гранитных плит</h2>
+      <Swiper
+        // initialize Swiper modules
+        modules={[Navigation, Pagination, A11y, Autoplay]}
+        autoplay={({ delay: 3000 }, { disableOnInteraction: false })}
+        spaceBetween={0}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: false }}
+        loop={true}
+        noSwipingClass="swiper-slide"
+      >
+        <SwiperSlide>
+          <div className="slider-img">
+            <div className="slider__slide">
+              <div className="slide__top">
+                <h6>Прямиком из Италии</h6>
+                <h2>
+                  Персональный заказ и установка широкоформатных
+                  керамо-гранитных плит
+                </h2>
+              </div>
+              <div className="slide__bottom">
+                <div className="slide__bottom-text">
+                  <p>
+                    Доверьте нам, ваш ремонт ведь мы это компания которая много
+                    лет занимаемся привозом под заказ строй материалов, их
+                    установкой и дальнейшим обслуживанием.
+                  </p>
                 </div>
-                <div className="slide__bottom">
-                    <div className="slide__bottom-text">
-                        <p>
-                            Доверьте нам, ваш ремонт ведь мы это компания которая много лет 
-                            занимаемся привозом под заказ строй материалов, их установкой и
-                            дальнейшим обслуживанием.
-                        </p>
-                    </div>
-                    <div className="slide__bottom-link">
-                    <Link to="/">Посмотреть каталог</Link>
-                    </div>
+                <div className="slide__bottom-link">
+                  <Link to="/">Посмотреть каталог</Link>
                 </div>
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slider-img">
-              <div className="slider__slide">
-                <div className="slide__top">
-                  <h6>Прямиком из Италии</h6>
-                  <h2>Персональный заказ и установка широкоформатных керамо-гранитных плит</h2>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slider-img">
+            <div className="slider__slide">
+              <div className="slide__top">
+                <h6>Прямиком из Италии</h6>
+                <h2>
+                  Персональный заказ и установка широкоформатных
+                  керамо-гранитных плит
+                </h2>
+              </div>
+              <div className="slide__bottom">
+                <div className="slide__bottom-text">
+                  <p>
+                    Доверьте нам, ваш ремонт ведь мы это компания которая много
+                    лет занимаемся привозом под заказ строй материалов, их
+                    установкой и дальнейшим обслуживанием.
+                  </p>
                 </div>
-                <div className="slide__bottom">
-                    <div className="slide__bottom-text">
-                        <p>
-                            Доверьте нам, ваш ремонт ведь мы это компания которая много лет 
-                            занимаемся привозом под заказ строй материалов, их установкой и
-                            дальнейшим обслуживанием.
-                        </p>
-                    </div>
-                    <div className="slide__bottom-link">
-                    <Link to="/">Посмотреть каталог</Link>
-                    </div>
+                <div className="slide__bottom-link">
+                  <Link to="/">Посмотреть каталог</Link>
                 </div>
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slider-img">
-              <div className="slider__slide">
-                <div className="slide__top">
-                  <h6>Прямиком из Италии</h6>
-                  <h2>Персональный заказ и установка широкоформатных керамо-гранитных плит</h2>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slider-img">
+            <div className="slider__slide">
+              <div className="slide__top">
+                <h6>Прямиком из Италии</h6>
+                <h2>
+                  Персональный заказ и установка широкоформатных
+                  керамо-гранитных плит
+                </h2>
+              </div>
+              <div className="slide__bottom">
+                <div className="slide__bottom-text">
+                  <p>
+                    Доверьте нам, ваш ремонт ведь мы это компания которая много
+                    лет занимаемся привозом под заказ строй материалов, их
+                    установкой и дальнейшим обслуживанием.
+                  </p>
                 </div>
-                <div className="slide__bottom">
-                    <div className="slide__bottom-text">
-                        <p>
-                            Доверьте нам, ваш ремонт ведь мы это компания которая много лет 
-                            занимаемся привозом под заказ строй материалов, их установкой и
-                            дальнейшим обслуживанием.
-                        </p>
-                    </div>
-                    <div className="slide__bottom-link">
-                    <Link to="/">Посмотреть каталог</Link>
-                    </div>
+                <div className="slide__bottom-link">
+                  <Link to="/">Посмотреть каталог</Link>
                 </div>
               </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="slider-img">
-              <div className="slider__slide">
-                <div className="slide__top">
-                  <h6>Прямиком из Италии</h6>
-                  <h2>Персональный заказ и установка широкоформатных керамо-гранитных плит</h2>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slider-img">
+            <div className="slider__slide">
+              <div className="slide__top">
+                <h6>Прямиком из Италии</h6>
+                <h2>
+                  Персональный заказ и установка широкоформатных
+                  керамо-гранитных плит
+                </h2>
+              </div>
+              <div className="slide__bottom">
+                <div className="slide__bottom-text">
+                  <p>
+                    Доверьте нам, ваш ремонт ведь мы это компания которая много
+                    лет занимаемся привозом под заказ строй материалов, их
+                    установкой и дальнейшим обслуживанием.
+                  </p>
                 </div>
-                <div className="slide__bottom">
-                    <div className="slide__bottom-text">
-                        <p>
-                            Доверьте нам, ваш ремонт ведь мы это компания которая много лет 
-                            занимаемся привозом под заказ строй материалов, их установкой и
-                            дальнейшим обслуживанием.
-                        </p>
-                    </div>
-                    <div className="slide__bottom-link">
-                    <Link to="/">Посмотреть каталог</Link>
-                    </div>
+                <div className="slide__bottom-link">
+                  <Link to="/">Посмотреть каталог</Link>
                 </div>
               </div>
             </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
-  )
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
 };
 
 export default Slider;
