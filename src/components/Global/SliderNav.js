@@ -9,7 +9,7 @@ import BgSlider from "../Main/BgSlider";
 // IMPORT IMAGES
 import Logo from "../../images/main_logo.jpg";
 
-const BigNav = () => {
+const SliderNav = () => {
   return (
     <nav className="nav">
       <BgSlider />
@@ -54,4 +54,4 @@ const BigNav = () => {
   );
 };
 
-export default BigNav;
+export default SliderNav;

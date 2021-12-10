@@ -6,12 +6,12 @@
   background-clip: content-box;
   background-size: cover;
   position: relative;
-  padding-bottom: 12rem;
+  margin-bottom: 12rem;
 
   .logo {
     &::before {
       height: 90rem;
-      bottom: -63.1rem;
+      bottom: -75.1rem;
     }
   }
 }

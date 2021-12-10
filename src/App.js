@@ -1,6 +1,6 @@
 // IMPORT MODULES
 import React from "react";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
 // IMPORT PERMANENT COMPONENTS
 import Footer from "./components/Global/Footer";
@@ -10,8 +10,7 @@ import ContactUs from "./components/Global/ContactUs";
 import Main from "./pages/Main";
 
 // IMPORT STYLES
-import './styles/style.scss';
-
+import "./styles/style.scss";
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
       </Routes>
-      {/* I put these 2 componenets outside of Routes because they are displayed on all pages. */}
+      {/* I put these 2 components outside of Routes because they are displayed on all pages. */}
       <ContactUs />
       <Footer />
     </div>
