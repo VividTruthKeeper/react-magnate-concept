@@ -3,16 +3,19 @@ import React from "react";
 // import { Link } from "react-router-dom";
 
 // IMPORT GLOBAL COMPONENTS
-import SliderNav from "../components/Global/SliderNav";
+import SliderNav from "../components/Main/SliderNav";
 
 // IMPORT OWN COMPONENTS
+import AboutSection from "../components/Main/AboutSection";
 
 const Main = () => {
   return (
     <div className="main">
-      <SliderNav title={""} text={""} />
+      <SliderNav />
       <div className="container">
-        <div className="main-inner"></div>
+        <div className="main-inner">
+          <AboutSection />
+        </div>
       </div>
     </div>
   );

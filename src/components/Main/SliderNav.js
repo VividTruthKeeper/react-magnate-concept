@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // IMPORT COMPONENTS
-import Slider from "../Main/Slider";
-import BgSlider from "../Main/BgSlider";
+import Slider from "./Slider";
+import BgSlider from "./BgSlider";
 
 // IMPORT IMAGES
 import Logo from "../../images/main_logo.jpg";

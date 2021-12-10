@@ -21,7 +21,7 @@ const BgSlider = () => {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
-        pagination={({ clickable: true }, { el: ".swiper-pagination" })}
+        pagination={({ clickable: false }, { el: ".swiper-pagination" })}
         loop={true}
         noSwipingClass="swiper-slide"
       >
