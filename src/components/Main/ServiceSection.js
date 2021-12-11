@@ -1,30 +1,33 @@
 // IMPORT MODULES
-import React, { UseRef, useEffect } from "react";
-// import { useInView } from "react-intersection-observer";
+import React, { useRef, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 // IMPORT GLOBAL COMPONENTS
 import SectionTitle from "../Global/SectionTitle";
 
 const ServiceSection = () => {
-  // const [ref2, inView2] = useInView({
-  //   threshold: 0.3,
-  // });
-  // const service = UseRef();
-  // useEffect(() => {
-  //   if (inView2) {
-  //     service.current.style.transform = "scale(1)";
-  //     service.current.style.opacity = "1";
-  //     service.current.style.transition = "0.5s all ease";
-  //   }
-  // }, [inView2]);
+  const animated = useRef();
+
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      animated.current.style.transform = "translateX(0rem)";
+      animated.current.style.opacity = "1";
+      animated.current.style.transition = "0.5s all ease";
+    }
+  }, [inView]);
+
   return (
-    <section className="service-section-outer">
+    <section ref={animated} className="service-section-outer">
       <div className="container">
         <SectionTitle title={"Узнайте что мы можем"} bigTitle="Наши услуги" />
       </div>
-      <div className="service-section">
+      <div ref={ref} className="service-section">
         <div className="service-content">
-          <div className="service-block service-block-1">
+          <div className="service-block">
             <h3>Проектирование</h3>
             <h6 className="fade-out">
               Мы создаем строгие, стильные, актуальные интерьеры в стиле,
@@ -32,7 +35,7 @@ const ServiceSection = () => {
               классики и современных технологий.
             </h6>
           </div>
-          <div className="service-block service-block-1">
+          <div className="service-block">
             <h3>Дизайн</h3>
             <h6 className="fade-out">
               Мы создаем строгие, стильные, актуальные интерьеры в стиле,
@@ -40,7 +43,7 @@ const ServiceSection = () => {
               классики и современных технологий.
             </h6>
           </div>
-          <div className="service-block service-block-1">
+          <div className="service-block">
             <h3>Авторский надзор</h3>
             <h6 className="fade-out">
               Мы создаем строгие, стильные, актуальные интерьеры в стиле,
@@ -48,7 +51,7 @@ const ServiceSection = () => {
               классики и современных технологий.
             </h6>
           </div>
-          <div className="service-block service-block-1">
+          <div className="service-block">
             <h3>Строительные и отделочные работы</h3>
             <h6 className="fade-out">
               Мы создаем строгие, стильные, актуальные интерьеры в стиле,
@@ -56,7 +59,7 @@ const ServiceSection = () => {
               классики и современных технологий.
             </h6>
           </div>
-          <div className="service-block service-block-1">
+          <div className="service-block">
             <h3> Мебель, материалы и элементы декора</h3>
             <h6 className="fade-out">
               Мы создаем строгие, стильные, актуальные интерьеры в стиле,

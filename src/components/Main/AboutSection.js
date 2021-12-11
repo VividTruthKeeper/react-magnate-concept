@@ -11,7 +11,7 @@ import SectionTitle from "../Global/SectionTitle";
 
 const AboutSection = () => {
   const [ref, inView] = useInView({
-    threshold: 0.3,
+    threshold: 0.5,
   });
   const animated = useRef();
   useEffect(() => {

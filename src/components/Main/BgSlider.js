@@ -14,7 +14,8 @@ const BgSlider = () => {
       <Swiper
         // initialize Swiper modules
         modules={[Navigation, Pagination, A11y, Autoplay]}
-        autoplay={({ delay: 3000 }, { disableOnInteraction: false })}
+        speed={2000}
+        autoplay={({ delay: 5000 }, { disableOnInteraction: false })}
         spaceBetween={0}
         slidesPerView={1}
         navigation={{
