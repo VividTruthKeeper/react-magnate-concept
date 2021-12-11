@@ -1,5 +1,6 @@
 .project-section {
   padding-bottom: 12rem;
+  opacity: 0;
 }
 
 .project-section-content {
@@ -20,6 +21,14 @@
   gap: 2rem;
   display: flex;
   flex-direction: column;
+}
+
+.project-section__left {
+  transform: translateX(-20rem);
+}
+
+.project-section__right {
+  transform: translateX(20rem);
 }
 
 .small-img {

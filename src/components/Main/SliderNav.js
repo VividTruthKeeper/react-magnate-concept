@@ -12,6 +12,7 @@ import Logo from "../../images/main_logo.jpg";
 const SliderNav = () => {
   return (
     <nav className="nav">
+      {/* Background slider */}
       <BgSlider />
       {/* A special div to make line horizontal line deco. I found it best among other possibilities. */}
       <div className="deco-horizontal"></div>
