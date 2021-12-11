@@ -3,7 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // IMPORT COMPONENTS
-import Slider from "./Slider";
 import BgSlider from "./BgSlider";
 
 // IMPORT IMAGES
@@ -47,9 +46,6 @@ const SliderNav = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="nav__inner__bottom">
-        <Slider />
       </div>
     </nav>
   );
