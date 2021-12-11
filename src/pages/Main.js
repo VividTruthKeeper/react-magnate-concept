@@ -1,15 +1,14 @@
 // IMPORT MODULES
-import React from "react";
-// import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 
 // IMPORT GLOBAL COMPONENTS
-import SliderNav from "../components/Main/SliderNav";
+import Nav from "../components/Global/Nav";
 
 // IMPORT OWN COMPONENTS
 import AboutSection from "../components/Main/AboutSection";
 import ServiceSection from "../components/Main/ServiceSection";
 import ProjectSection from "../components/Main/ProjectSection";
-import { useEffect } from "react/cjs/react.development";
+import SliderNav from "../components/Main/SliderNav";
 
 const Main = () => {
   useEffect(() => {
