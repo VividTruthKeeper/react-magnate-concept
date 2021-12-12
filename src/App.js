@@ -4,7 +4,6 @@ import { Routes, Route } from "react-router-dom";
 
 // IMPORT PERMANENT COMPONENTS
 import Footer from "./components/Global/Footer";
-import ContactUs from "./components/Global/ContactUs";
 
 // IMPORT PAGES
 import Main from "./pages/Main";
@@ -18,8 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
       </Routes>
-      {/* I put these 2 components outside of Routes because they are displayed on all pages. */}
-      <ContactUs />
+      {/* I put this component outside of Routes because it is displayed on all pages. */}
       <Footer />
     </div>
   );

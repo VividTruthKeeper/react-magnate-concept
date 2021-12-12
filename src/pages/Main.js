@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 
 // IMPORT GLOBAL COMPONENTS
-import Nav from "../components/Global/Nav";
 
 // IMPORT OWN COMPONENTS
 import AboutSection from "../components/Main/AboutSection";
