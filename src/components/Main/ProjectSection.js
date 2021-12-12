@@ -17,7 +17,7 @@ import Img_6 from "../../images/project_section_6.jpg";
 
 const ProjectSection = () => {
   const [ref, inView] = useInView({
-    threshold: 0.5,
+    threshold: 0.2,
   });
   const animated = useRef();
   const rightToLeft = useRef();
