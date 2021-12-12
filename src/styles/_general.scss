@@ -1,13 +1,14 @@
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
-.container{
-    max-width: 136rem;
-    padding: 0rem 4rem;
-    margin: 0 auto;
+.container {
+  max-width: 136rem;
+  padding: 0rem 4rem;
+  margin: 0 auto;
 }
