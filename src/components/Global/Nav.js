@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // IMPORT IMAGES
 import Logo from "../../images/main_logo.jpg";
 
-const Nav = ({ links, linkTitles, background }) => {
+const Nav = ({ links, linkTitles, background, centerData }) => {
   return (
     <div
       className="nav"
@@ -39,6 +39,19 @@ const Nav = ({ links, linkTitles, background }) => {
                   );
                 })}
               </ul>
+            </div>
+          </div>
+          <div className="nav__inner__bottom">
+            <div className="slider__slide">
+              <div className="slide__top">
+                <h6>{centerData[0]}</h6>
+                <h2>{centerData[1]}</h2>
+              </div>
+              <div className="slide__bottom">
+                <div className="slide__bottom-text">
+                  <p>{centerData[2]}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
