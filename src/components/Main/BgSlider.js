@@ -12,6 +12,7 @@ import "swiper/swiper.scss";
 const BgSlider = () => {
   return (
     <div className="bg-slider">
+      <div className="pagination-wrapper"></div>
       <Swiper
         // initialize Swiper modules
         modules={[Navigation, Pagination, A11y, Autoplay]}
@@ -22,8 +23,8 @@ const BgSlider = () => {
         navigation
         pagination={({ clickable: false }, { el: ".swiper-pagination" })}
         loop={true}
-        noSwipingClass="swiper-slide"
       >
+        <div className="swiper-pagination"></div>
         <SwiperSlide>
           <div className="slider-img_1">
             <div className="slider-img">
