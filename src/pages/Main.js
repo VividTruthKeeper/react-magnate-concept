@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 
 // IMPORT GLOBAL COMPONENTS
+import NewContactUs from "../components/Global/NewContactUs";
 
 // IMPORT OWN COMPONENTS
 import AboutSection from "../components/Main/AboutSection";
@@ -21,6 +22,7 @@ const Main = () => {
       <AboutSection />
       <ServiceSection />
       <ProjectSection />
+      <NewContactUs />
     </div>
   );
 };
