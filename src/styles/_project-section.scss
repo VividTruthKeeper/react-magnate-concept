@@ -58,6 +58,7 @@
 .project-section-img {
   border-radius: 1rem;
   position: relative;
+  overflow: hidden;
 
   &::before {
     border-radius: 1rem;
@@ -74,6 +75,18 @@
     top: 0;
     left: 0;
     z-index: 2;
+  }
+
+  img {
+    transform: scale(1);
+    transition: 0.3s all ease;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+      transition: 0.3s all ease;
+    }
   }
 }
 

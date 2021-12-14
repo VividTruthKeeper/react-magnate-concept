@@ -33,7 +33,7 @@ const Nav = ({ links, linkTitles, background, centerData }) => {
                 {links.map((el, i) => {
                   console.log(background);
                   return (
-                    <Link key={i} to={links[i]}>
+                    <Link key={i} to={el}>
                       {linkTitles[i]}
                     </Link>
                   );
