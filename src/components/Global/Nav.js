@@ -31,7 +31,6 @@ const Nav = ({ links, linkTitles, background, centerData }) => {
             <div className="footer__right nav__right">
               <ul>
                 {links.map((el, i) => {
-                  console.log(background);
                   return (
                     <Link key={i} to={el}>
                       {linkTitles[i]}

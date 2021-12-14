@@ -1,9 +1,6 @@
 // IMPORT MODULES
 import React, { useEffect } from "react";
 
-// IMPORT GLOBAL COMPONENTS
-import CustomList from "../components/Global/CustomList";
-
 // IMPORT OWN COMPONENTS
 import AboutSection from "../components/Main/AboutSection";
 import ServiceSection from "../components/Main/ServiceSection";
@@ -22,7 +19,6 @@ const Main = () => {
       <AboutSection />
       <ServiceSection />
       <ProjectSection />
-      <CustomList list={["a", "b", "c"]} />
     </div>
   );
 };

@@ -1,4 +1,7 @@
-.custom-list {
+.custom-list-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
   ul {
     list-style-image: url("../svg/list-bullet.svg");
     display: flex;
@@ -10,28 +13,27 @@
 
 .custom-list-item {
   position: relative;
+  min-height: 5rem;
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.border-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: -1.9rem;
+  height: 100%;
 }
 
 .border {
-  position: absolute;
-  width: 0.2rem;
   height: 1rem;
+  width: 0.2rem;
   background: $base-pink;
   opacity: 0.3;
   border: none;
-}
-
-.border-1 {
-  top: 2rem;
-  left: -1.8rem;
-}
-
-.border-2 {
-  top: 3.5rem;
-  left: -1.8rem;
-}
-
-.border-3 {
-  top: 5rem;
-  left: -1.8rem;
 }
