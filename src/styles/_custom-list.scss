@@ -1,0 +1,37 @@
+.custom-list {
+  ul {
+    list-style-image: url("../svg/list-bullet.svg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+.custom-list-item {
+  position: relative;
+}
+
+.border {
+  position: absolute;
+  width: 0.2rem;
+  height: 1rem;
+  background: $base-pink;
+  opacity: 0.3;
+  border: none;
+}
+
+.border-1 {
+  top: 2rem;
+  left: -1.8rem;
+}
+
+.border-2 {
+  top: 3.5rem;
+  left: -1.8rem;
+}
+
+.border-3 {
+  top: 5rem;
+  left: -1.8rem;
+}

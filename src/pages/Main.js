@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 
 // IMPORT GLOBAL COMPONENTS
 import NewContactUs from "../components/Global/NewContactUs";
+import CustomList from "../components/Global/CustomList";
 
 // IMPORT OWN COMPONENTS
 import AboutSection from "../components/Main/AboutSection";
@@ -23,6 +24,7 @@ const Main = () => {
       <ServiceSection />
       <ProjectSection />
       <NewContactUs />
+      <CustomList list={["a", "b", "c"]} />
     </div>
   );
 };
