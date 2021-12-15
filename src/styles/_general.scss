@@ -17,6 +17,10 @@ body {
   font-weight: bold;
 }
 
+.colored {
+  color: $base-pink;
+}
+
 .content-block {
   display: flex;
   flex-direction: column;
