@@ -11,6 +11,7 @@ import Furniture from "./pages/Furniture";
 import Engineering from "./pages/Engineering";
 import Design from "./pages/Design";
 import Construction from "./pages/Construction";
+import Supervision from "./pages/Supervision";
 
 // IMPORT STYLES
 import "./styles/style.scss";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/service_engineering" element={<Engineering />} />
         <Route path="/service_design" element={<Design />} />
         <Route path="/service_construction" element={<Construction />} />
+        <Route path="/service_supervision" element={<Supervision />} />
       </Routes>
       {/* I put this component outside of Routes because it is displayed on all pages. */}
       <Footer />
