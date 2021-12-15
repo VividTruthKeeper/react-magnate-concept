@@ -16,3 +16,10 @@ body {
 .strong {
   font-weight: bold;
 }
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-bottom: 5rem;
+}

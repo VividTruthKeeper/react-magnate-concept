@@ -24,7 +24,7 @@ const Design = () => {
         background={Img}
       />
       <div className="container">
-        <div className="design-inner">
+        <div className="design-inner content-block ">
           <SectionTitle title={"Что такое"} bigTitle={"Дизайн интерьера"} />
           <div className="indent-text">
             <p>

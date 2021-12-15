@@ -23,7 +23,7 @@ const Furniture = () => {
         background={Img}
       />
       <div className="container">
-        <div className="furniture-inner">
+        <div className="furniture-inner content-block">
           <SectionTitle
             title={"Мы делаем"}
             bigTitle={"Мебель, материалы и элементы декора"}
