@@ -1,13 +1,10 @@
-.furniture-content {
+.indent-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
   padding: 5rem 0;
 
   p {
     font-size: 2rem;
   }
-}
-
-.indent-text {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
 }

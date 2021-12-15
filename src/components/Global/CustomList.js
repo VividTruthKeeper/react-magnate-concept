@@ -7,9 +7,9 @@ import SectionTitle from "./SectionTitle";
 const CustomList = ({ list, title }) => {
   return (
     <div className="custom-list">
+      <SectionTitle bigTitle={title} title={""} />
       <div className="container">
         <div className="custom-list-inner">
-          <SectionTitle bigTitle={title} />
           <ul>
             {list.map((el, i) => {
               if (i === list.length - 1) {

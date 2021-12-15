@@ -8,6 +8,7 @@ import Footer from "./components/Global/Footer";
 // IMPORT PAGES
 import Main from "./pages/Main";
 import Furniture from "./pages/Furniture";
+import Engineering from "./pages/Engineering";
 
 // IMPORT STYLES
 import "./styles/style.scss";
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Main />} />
         <Route path="/service_furniture" element={<Furniture />} />
+        <Route path="/service_engineering" element={<Engineering />} />
       </Routes>
       {/* I put this component outside of Routes because it is displayed on all pages. */}
       <Footer />
