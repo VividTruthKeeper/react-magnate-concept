@@ -12,6 +12,7 @@ import Engineering from "./pages/Engineering";
 import Design from "./pages/Design";
 import Construction from "./pages/Construction";
 import Supervision from "./pages/Supervision";
+import AboutUs from "./pages/AbousUs";
 
 // IMPORT STYLES
 import "./styles/style.scss";
@@ -26,6 +27,7 @@ function App() {
         <Route path="/service_design" element={<Design />} />
         <Route path="/service_construction" element={<Construction />} />
         <Route path="/service_supervision" element={<Supervision />} />
+        <Route path="/about_us" element={<AboutUs />} />
       </Routes>
       {/* I put this component outside of Routes because it is displayed on all pages. */}
       <Footer />
