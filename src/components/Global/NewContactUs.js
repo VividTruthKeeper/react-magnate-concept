@@ -12,10 +12,10 @@ import Whatsapp from "../../svg/whatsapp.svg";
 import Instagram from "../../svg/instagram.svg";
 
 const NewContactUs = () => {
+  const animated = useRef();
   const [ref, inView] = useInView({
     threshold: 0.3,
   });
-  const animated = useRef();
   useEffect(() => {
     if (inView) {
       animated.current.style.transform = "scale(1)";
@@ -54,20 +54,20 @@ const NewContactUs = () => {
               </a>
             </li>
             <li>
-              <div className="list-item">
+              <a href="mailto:magnate.concept@gmail.com" className="list-item">
                 <div className="list-img">
                   <img src={Email} alt="Email" />
                 </div>
                 <h6 className="list-text">magnate.concept@gmail.com</h6>
-              </div>
+              </a>
             </li>
             <li>
-              <div className="list-item">
+              <a href="https://wa.me/+99363217733" className="list-item">
                 <div className="list-img">
                   <img src={Whatsapp} alt="Whatsapp" />
                 </div>
                 <h6 className="list-text">+99363217733</h6>
-              </div>
+              </a>
             </li>
           </ul>
         </div>
