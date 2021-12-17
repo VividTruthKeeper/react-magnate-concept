@@ -1,5 +1,5 @@
 // IMPORT MODULES
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 // IMPORT GLOBAL COMPONENTS
