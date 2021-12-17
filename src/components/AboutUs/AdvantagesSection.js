@@ -1,13 +1,10 @@
 // IMPORT MODULES
-import React, { useEffect } from "react";
+import React from "react";
 
 // IMPORT COMPONENTS
 import SectionTitle from "../Global/SectionTitle";
 
 const AdvantagesSection = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <section className="advantages">
       <div className="container">

@@ -11,6 +11,9 @@ import CustomList from "../components/Global/CustomList";
 import Img from "../images/supervision.jpg";
 
 const Supervision = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="supervision">
       <Nav

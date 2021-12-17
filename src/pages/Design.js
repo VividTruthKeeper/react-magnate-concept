@@ -11,6 +11,9 @@ import CustomList from "../components/Global/CustomList";
 import Img from "../images/design.jpg";
 
 const Design = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="design">
       <Nav

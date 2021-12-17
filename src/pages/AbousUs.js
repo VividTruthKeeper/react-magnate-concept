@@ -14,6 +14,9 @@ import AdvantagesSection from "../components/AboutUs/AdvantagesSection";
 import Img from "../images/about_us.jpg";
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="about-us">
       <Nav

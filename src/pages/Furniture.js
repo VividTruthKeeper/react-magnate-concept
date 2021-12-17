@@ -10,6 +10,9 @@ import NewContactUs from "../components/Global/NewContactUs";
 import Img from "../images/furniture.jpg";
 
 const Furniture = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="furniture">
       <Nav
