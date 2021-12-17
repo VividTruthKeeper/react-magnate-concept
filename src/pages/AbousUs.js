@@ -7,6 +7,9 @@ import Nav from "../components/Global/Nav";
 import SectionTitle from "../components/Global/SectionTitle";
 import CustomList from "../components/Global/CustomList";
 
+// IMPORT OWN COMPONENTS
+import AdvantagesSection from "../components/AboutUs/AdvantagesSection";
+
 // IMPORT IMAGES
 import Img from "../images/about_us.jpg";
 
@@ -52,6 +55,13 @@ const AboutUs = () => {
               реализуем любые проекты интерьеров.
             </p>
           </div>
+        </div>
+      </div>
+      <div className="about-us-outer">
+        <AdvantagesSection />
+      </div>
+      <div className="container">
+        <div className="about-us-inner content-block">
           <CustomList
             title={"Почему стоит выбрать нашу компанию?"}
             list={[

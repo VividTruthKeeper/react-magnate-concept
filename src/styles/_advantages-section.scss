@@ -1,0 +1,53 @@
+.advantages-content {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/advantages-section.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+  width: 100%;
+  min-height: 81.6rem;
+  margin-top: 5rem;
+}
+
+.advantages-bg-blur {
+  backdrop-filter: blur(1.7rem);
+}
+
+.about-us-outer {
+  padding: 5rem 0;
+}
+
+.advantage-blocks-wrapper {
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  height: 100%;
+}
+
+.advantage-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  padding: 4rem;
+  height: 100%;
+  min-height: 28.8rem;
+  max-width: 40rem;
+}
+
+.advantage-title {
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+}
+
+.advantage-text {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}

@@ -9,6 +9,7 @@ import SliderNav from "../components/Main/SliderNav";
 
 const Main = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
     window.addEventListener("beforeunload", () => {
       window.scrollTo(0, 0);
     });
