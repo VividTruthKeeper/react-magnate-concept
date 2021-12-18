@@ -6,6 +6,9 @@ import AboutSection from "../components/Main/AboutSection";
 import ServiceSection from "../components/Main/ServiceSection";
 import ProjectSection from "../components/Main/ProjectSection";
 import SliderNav from "../components/Main/SliderNav";
+import ShortNav from "../components/Global/ShortNav";
+
+import Img from "../images/short_nav.jpg";
 
 const Main = () => {
   useEffect(() => {
@@ -20,6 +23,12 @@ const Main = () => {
       <AboutSection />
       <ServiceSection />
       <ProjectSection />
+      <ShortNav
+        links={["/", "/", "/", "/", "/"]}
+        linkTitles={["Услуги", "Портфолио", "О компании", "Контакты"]}
+        centerData={["Наши услуги", "Дизайн"]}
+        background={Img}
+      />
     </div>
   );
 };
