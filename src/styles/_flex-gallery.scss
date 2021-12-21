@@ -1,0 +1,21 @@
+.gallery-block-inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.img-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+  width: 30.5rem;
+  height: 30.5rem;
+  border-radius: 1rem;
+}
+
+.flex-gallery {
+  .content-block {
+    padding-bottom: 0;
+  }
+}

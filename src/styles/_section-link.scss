@@ -1,0 +1,10 @@
+.section-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    color: $base-pink;
+    font-size: 1.4rem;
+  }
+}
