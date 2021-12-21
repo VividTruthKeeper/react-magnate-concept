@@ -31,13 +31,10 @@ const SliderNav = () => {
                   <Link to="/">Услуги</Link>
                 </li>
                 <li>
-                  <Link to="/">Каталог товаров</Link>
-                </li>
-                <li>
                   <Link to="/">Портфолио</Link>
                 </li>
                 <li>
-                  <Link to="/">О компании</Link>
+                  <Link to="/about_us">О компании</Link>
                 </li>
                 <li>
                   <Link to="/">Контакты</Link>

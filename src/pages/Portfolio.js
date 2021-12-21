@@ -8,6 +8,7 @@ import FlexGallery from "../components/Portfolio/FlexGallery";
 // IMPORT IMAGES
 import Img from "../images/portfolio.jpg";
 
+// GALLERY IMAGES
 import Window_1 from "../images/portfolio_window_1.jpg";
 import Window_2 from "../images/portfolio_window_2.jpg";
 import Window_3 from "../images/portfolio_window_3.jpg";
@@ -28,7 +29,7 @@ const Porfolio = () => {
     <section className="portfolio">
       <ShortNav
         background={Img}
-        links={["/", "/", "/", "/", "/"]}
+        links={["/", "/", "/about_us", "/"]}
         linkTitles={["Услуги", "Портфолио", "О компании", "Контакты"]}
         centerData={["Ознакомьтесь", "Портфолио"]}
       />

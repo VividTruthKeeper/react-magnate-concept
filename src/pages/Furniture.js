@@ -16,7 +16,7 @@ const Furniture = () => {
   return (
     <div className="furniture">
       <Nav
-        links={["/", "/", "/", "/", "/"]}
+        links={["/", "/", "/about_us", "/"]}
         linkTitles={["Услуги", "Портфолио", "О компании", "Контакты"]}
         centerData={[
           "Наши услуги",

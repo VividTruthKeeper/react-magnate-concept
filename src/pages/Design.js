@@ -17,7 +17,7 @@ const Design = () => {
   return (
     <section className="design">
       <Nav
-        links={["/", "/", "/", "/", "/"]}
+        links={["/", "/", "/about_us", "/"]}
         linkTitles={["Услуги", "Портфолио", "О компании", "Контакты"]}
         centerData={[
           "Наши услуги",
