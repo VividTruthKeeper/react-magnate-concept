@@ -51,6 +51,13 @@
 }
 
 .short-nav {
+  .logo {
+    &::before {
+      height: 30.5rem;
+      bottom: -15.5rem;
+    }
+  }
+
   min-height: unset;
   height: 30.5rem;
 
