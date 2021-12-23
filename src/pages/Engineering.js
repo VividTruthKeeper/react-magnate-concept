@@ -17,8 +17,6 @@ const Engineering = () => {
   return (
     <section className="engineering">
       <Nav
-        links={["/", "/", "/", "/about_us", "/"]}
-        linkTitles={["Услуги", "Портфолио", "О компании", "Контакты"]}
         centerData={[
           "Наши услуги",
           "Проектирование",

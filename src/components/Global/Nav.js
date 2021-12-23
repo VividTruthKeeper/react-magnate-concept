@@ -1,11 +1,16 @@
 // IMPORT MODULES
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 // IMPORT IMAGES
 import Logo from "../../images/main_logo.jpg";
 
-const Nav = ({ links, linkTitles, background, centerData }) => {
+const Nav = ({ background, centerData }) => {
+  const Dropdown = useRef();
+  const DropHandler = (reference) => {
+    const object = reference.current;
+    object.classList.toggle("active");
+  };
   return (
     <div
       className="nav"
@@ -30,13 +35,44 @@ const Nav = ({ links, linkTitles, background, centerData }) => {
             </div>
             <div className="footer__right nav__right">
               <ul>
-                {links.map((el, i) => {
-                  return (
-                    <Link key={i} to={el}>
-                      {linkTitles[i]}
-                    </Link>
-                  );
-                })}
+                <li
+                  className="service-dropdown"
+                  onClick={() => {
+                    DropHandler(Dropdown);
+                  }}
+                >
+                  <h4>Услуги</h4>
+                  <ul ref={Dropdown} className="dropdown">
+                    <li>
+                      <Link to="/service_engineering">Проектирование</Link>
+                    </li>
+                    <li>
+                      <Link to="/service_design">Дизайн</Link>
+                    </li>
+                    <li>
+                      <Link to="/service_construction">
+                        Строительные и отделочные работы
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/service_supervision">Авторский надзор</Link>
+                    </li>
+                    <li>
+                      <Link to="/service_furniture">
+                        Мебель, материалы и элементы декора
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link to="/portfolio">Портфолио</Link>
+                </li>
+                <li>
+                  <Link to="/about_us">О компании</Link>
+                </li>
+                <li>
+                  <Link to="/">Контакты</Link>
+                </li>
               </ul>
             </div>
           </div>

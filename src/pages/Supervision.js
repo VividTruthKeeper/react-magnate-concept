@@ -17,8 +17,6 @@ const Supervision = () => {
   return (
     <section className="supervision">
       <Nav
-        links={["/", "/", "/about_us", "/"]}
-        linkTitles={["Услуги", "Портфолио", "О компании", "Контакты"]}
         centerData={[
           "Наши услуги",
           "Авторский надзор",

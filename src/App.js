@@ -14,6 +14,7 @@ import Construction from "./pages/Construction";
 import Supervision from "./pages/Supervision";
 import AboutUs from "./pages/AbousUs";
 import Portfolio from "./pages/Portfolio";
+import PortfolioExtended from "./pages/PortfolioExtended";
 
 // IMPORT STYLES
 import "./styles/style.scss";
@@ -30,6 +31,11 @@ function App() {
         <Route path="/service_supervision" element={<Supervision />} />
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/portfolio" exact element={<Portfolio />} />
+        <Route
+          path="/portfolio/windows"
+          exact
+          element={<PortfolioExtended />}
+        />
       </Routes>
       {/* I put this component outside of Routes because it is displayed on all pages. */}
       <Footer />

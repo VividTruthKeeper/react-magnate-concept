@@ -22,7 +22,7 @@ const FlexGallery = ({ images, titles, links, linkTitles }) => {
                     className="img-wrapper"
                     key={i}
                     style={{
-                      background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(${img})`,
+                      background: `url(${img})`,
                     }}
                   ></div>
                 );

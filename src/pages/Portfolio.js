@@ -27,12 +27,7 @@ import Parquet_4 from "../images/portfolio_parquet_4.jpg";
 const Porfolio = () => {
   return (
     <section className="portfolio">
-      <ShortNav
-        background={Img}
-        links={["/", "/", "/about_us", "/"]}
-        linkTitles={["Услуги", "Портфолио", "О компании", "Контакты"]}
-        centerData={["Ознакомьтесь", "Портфолио"]}
-      />
+      <ShortNav background={Img} centerData={["Ознакомьтесь", "Портфолио"]} />
       <div className="container">
         <div className="portfolio-inner content-block">
           <FlexGallery

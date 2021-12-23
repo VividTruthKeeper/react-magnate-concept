@@ -1,5 +1,5 @@
 // IMPORT MODULES
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 // IMPORT COMPONENTS
@@ -9,6 +9,11 @@ import BgSlider from "./BgSlider";
 import Logo from "../../images/main_logo.jpg";
 
 const SliderNav = () => {
+  const Dropdown = useRef();
+  const DropHandler = (reference) => {
+    const object = reference.current;
+    object.classList.toggle("active");
+  };
   return (
     <nav className="nav">
       {/* Background slider */}
@@ -27,11 +32,37 @@ const SliderNav = () => {
             </div>
             <div className="footer__right nav__right">
               <ul>
-                <li>
-                  <Link to="/">Услуги</Link>
+                <li
+                  className="service-dropdown"
+                  onClick={() => {
+                    DropHandler(Dropdown);
+                  }}
+                >
+                  <h4>Услуги</h4>
+                  <ul ref={Dropdown} className="dropdown">
+                    <li>
+                      <Link to="/service_engineering">Проектирование</Link>
+                    </li>
+                    <li>
+                      <Link to="/service_design">Дизайн</Link>
+                    </li>
+                    <li>
+                      <Link to="/service_construction">
+                        Строительные и отделочные работы
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/service_supervision">Авторский надзор</Link>
+                    </li>
+                    <li>
+                      <Link to="/service_furniture">
+                        Мебель, материалы и элементы декора
+                      </Link>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <Link to="/">Портфолио</Link>
+                  <Link to="/portfolio">Портфолио</Link>
                 </li>
                 <li>
                   <Link to="/about_us">О компании</Link>

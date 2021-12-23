@@ -20,8 +20,6 @@ const AboutUs = () => {
   return (
     <section className="about-us">
       <Nav
-        links={["/", "/", "/about_us", "/"]}
-        linkTitles={["Услуги", "Портфолио", "О компании", "Контакты"]}
         centerData={[
           "Узнайте кто мы",
           "О компании",
