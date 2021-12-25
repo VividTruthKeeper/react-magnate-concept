@@ -28,9 +28,9 @@ const ShortNav = ({ background, centerData }) => {
           <div className="nav__inner__top">
             <div className="footer__left nav__left">
               <div className="footer__left-first nav__left-first">
-                <div className="logo">
+                <Link to="/" className="logo">
                   <img src={Logo} alt="Magnat-Logo" />
-                </div>
+                </Link>
               </div>
             </div>
             <div className="footer__right nav__right">
