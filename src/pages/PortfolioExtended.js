@@ -23,8 +23,13 @@ const PortfolioExtended = () => {
   const slider = useRef(null);
 
   const ImageShowHandler = () => {
-    section.current.classList.add("stale");
+    document.body.style.overflowY = "hidden";
     slider.current.classList.add("shown");
+  };
+
+  const ImageCloseHandler = () => {
+    document.body.style.overflowY = "visible";
+    slider.current.classList.remove("shown");
   };
 
   // I set a state with all the images to pass the down to the image slider
@@ -46,6 +51,7 @@ const PortfolioExtended = () => {
         activeImageIndex={activeImageIndex}
         setActiveImageIndex={setActiveImageIndex}
         slider={slider}
+        ImageCloseHandler={ImageCloseHandler}
       />
       <ShortNav background={Img} centerData={["Ознакомьтесь", "Портфолио"]} />
       <div className="container">

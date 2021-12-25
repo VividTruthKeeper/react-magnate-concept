@@ -11,6 +11,7 @@ const ImageSlider = ({
   activeImageIndex,
   setActiveImageIndex,
   slider,
+  ImageCloseHandler,
 }) => {
   // Join all the arrays into one
   const [flattened] = useState(images.flat());
@@ -39,7 +40,7 @@ const ImageSlider = ({
           e.target !== img.current &&
           e.target !== imgBlock.current
         ) {
-          slider.current.classList.remove("shown");
+          ImageCloseHandler();
         }
       }}
     >
@@ -50,12 +51,7 @@ const ImageSlider = ({
               <span ref={numberSpan}>{activeImageIndex + 1} </span>/
               <p ref={numberP}>{flattened.length}</p>
             </h3>
-            <div
-              className="exit"
-              onClick={() => {
-                slider.current.classList.remove("shown");
-              }}
-            >
+            <div className="exit">
               <img src={Exit} alt="exit" />
             </div>
           </div>
