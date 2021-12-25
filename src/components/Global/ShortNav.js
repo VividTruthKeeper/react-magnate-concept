@@ -71,7 +71,7 @@ const ShortNav = ({ background, centerData }) => {
                   <Link to="/about_us">О компании</Link>
                 </li>
                 <li>
-                  <Link to="/">Контакты</Link>
+                  <Link to="/contact_us">Контакты</Link>
                 </li>
               </ul>
             </div>

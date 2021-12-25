@@ -15,6 +15,7 @@ import Supervision from "./pages/Supervision";
 import AboutUs from "./pages/AbousUs";
 import Portfolio from "./pages/Portfolio";
 import PortfolioExtended from "./pages/PortfolioExtended";
+import ContactUs from "./pages/ContactUs";
 
 // IMPORT STYLES
 import "./styles/style.scss";
@@ -31,6 +32,7 @@ function App() {
         <Route path="/service_supervision" element={<Supervision />} />
         <Route path="/about_us" element={<AboutUs />} />
         <Route path="/portfolio" exact element={<Portfolio />} />
+        <Route path="/contact_us" element={<ContactUs />} />
         <Route
           path="/portfolio/windows"
           exact

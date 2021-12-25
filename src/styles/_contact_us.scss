@@ -165,3 +165,69 @@
   border-bottom: 0rem solid $base-pink;
   transition: 0.1s all ease;
 }
+
+.contact-us-inner {
+  padding-bottom: 10rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.cu-form-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+
+  h5 {
+    font-size: 1.8rem;
+    font-weight: normal;
+  }
+
+  input {
+    padding: 2rem 0 2rem 2rem;
+    max-width: unset;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+    border: 0.1rem solid #c4c4c4;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+  }
+
+  textarea {
+    resize: none;
+    padding: 2rem 0 2rem 2rem;
+    max-width: unset;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+    border: 0.1rem solid #c4c4c4;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+  }
+}
+
+.cu-form-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  button {
+    max-width: 26rem;
+  }
+
+  p {
+    text-align: right;
+    align-self: center;
+    font-size: 1.8rem;
+  }
+}
