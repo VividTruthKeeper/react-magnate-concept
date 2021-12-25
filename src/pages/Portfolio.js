@@ -39,8 +39,8 @@ const Porfolio = () => {
             titles={["Окна", "Керамогранит", "Паркет"]}
             links={[
               "/portfolio/windows",
-              "/portfolio/stoneware",
-              "/portfolio/parquet",
+              "/portfolio/windows",
+              "/portfolio/windows",
             ]}
             linkTitles={["Посмотреть ещё", "Посмотреть ещё", "Посмотреть ещё"]}
           />

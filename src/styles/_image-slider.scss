@@ -1,0 +1,108 @@
+.portfolio-extended {
+  position: relative;
+
+  &.stale {
+    overflow-y: hidden;
+  }
+}
+
+.image-slider {
+  padding-bottom: 13rem;
+  padding-top: 5rem;
+  backdrop-filter: blur(1rem);
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 200;
+  transition: all 0.4s ease;
+
+  &.shown {
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.4s ease;
+  }
+}
+
+.image {
+  max-width: 82rem;
+  max-height: 82rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 2rem;
+  }
+}
+
+.image-slider-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.exit {
+  cursor: pointer;
+}
+
+.image-slider-top {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: space-around;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    color: #fff;
+
+    span {
+      font-weight: bold;
+      font-size: 2.4rem;
+      margin-right: 0.8rem;
+    }
+
+    p {
+      margin-left: 0.8rem;
+    }
+  }
+}
+
+.image-slider-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-nav {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+  }
+
+  img {
+    width: 50%;
+    height: 70%;
+    object-fit: contain;
+  }
+}
