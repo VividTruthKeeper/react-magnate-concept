@@ -39,9 +39,6 @@ const PortfolioExtended = () => {
 
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  // useEffect(() => {
-  //   setImages([...images, [Gal_1, Gal_2, Gal_3, Gal_4, Gal_5, Gal_6]]);
-  // }, []);
   return (
     <section ref={section} className="portfolio-extended">
       <ImageSlider
