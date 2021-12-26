@@ -17,6 +17,8 @@ import Portfolio from "./pages/Portfolio";
 import PortfolioExtended from "./pages/PortfolioExtended";
 import ContactUs from "./pages/ContactUs";
 import WindowSub from "./pages/WindowSub";
+import ParquetSub from "./pages/ParquetSub";
+import StonewareSub from "./pages/StonewareSub";
 
 // IMPORT STYLES
 import "./styles/style.scss";
@@ -40,6 +42,8 @@ function App() {
           element={<PortfolioExtended />}
         />
         <Route path="/portfolio/windows/sub" element={<WindowSub />} />
+        <Route path="/portfolio/parquet/sub" element={<ParquetSub />} />
+        <Route path="/portfolio/stoneware/sub" element={<StonewareSub />} />
       </Routes>
       {/* I put this component outside of Routes because it is displayed on all pages. */}
       <Footer />

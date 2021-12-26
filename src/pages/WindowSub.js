@@ -5,6 +5,7 @@ import React from "react";
 import ShortNav from "../components/Global/ShortNav";
 import SectionTitle from "../components/Global/SectionTitle";
 import NewContactUs from "../components/Global/NewContactUs";
+import TypeDemo from "../components/Global/TypeDemo";
 
 // IMPORT IMAGES
 import Img from "../images/window_sub.jpg";
@@ -12,7 +13,6 @@ import Img from "../images/window_sub.jpg";
 import Win_1 from "../images/window_sub_1.jpg";
 import Win_2 from "../images/window_sub_2.jpg";
 import Win_3 from "../images/window_sub_3.jpg";
-import TypeDemo from "../components/Global/TypeDemo";
 
 const WindowSub = () => {
   return (
@@ -63,6 +63,7 @@ const WindowSub = () => {
                 "расчетное исполнение",
               ],
             ]}
+            imgWidth={"40rem"}
           />
         </div>
       </div>
