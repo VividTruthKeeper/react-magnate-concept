@@ -16,6 +16,7 @@ import AboutUs from "./pages/AbousUs";
 import Portfolio from "./pages/Portfolio";
 import PortfolioExtended from "./pages/PortfolioExtended";
 import ContactUs from "./pages/ContactUs";
+import WindowSub from "./pages/WindowSub";
 
 // IMPORT STYLES
 import "./styles/style.scss";
@@ -38,6 +39,7 @@ function App() {
           exact
           element={<PortfolioExtended />}
         />
+        <Route path="/portfolio/windows/sub" element={<WindowSub />} />
       </Routes>
       {/* I put this component outside of Routes because it is displayed on all pages. */}
       <Footer />
