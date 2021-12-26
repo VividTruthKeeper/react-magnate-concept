@@ -63,7 +63,6 @@ const WindowSub = () => {
                 "расчетное исполнение",
               ],
             ]}
-            imgWidth={"40rem"}
           />
         </div>
       </div>

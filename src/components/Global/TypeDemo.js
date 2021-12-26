@@ -4,13 +4,21 @@ import React from "react";
 // IMPORT COMPONENTS
 import SectionTitle from "./SectionTitle";
 
-const TypeDemo = ({ imgList, titleList, list, imgWidth }) => {
+const TypeDemo = ({ imgList, titleList, list }) => {
+  console.log(typeof imgList.length);
   return (
     <div className="type-demo">
       {imgList.map((img, i) => {
         return (
           <div key={i} className="type-block">
-            <div className="type-img" style={{ maxWidth: imgWidth }}>
+            <div
+              className="type-img"
+              style={
+                imgList.length === 2
+                  ? { maxWidth: "62rem" }
+                  : { maxWidth: "40rem" }
+              }
+            >
               <img src={img} alt="type" />
             </div>
             <SectionTitle bigTitle={titleList[i]} />

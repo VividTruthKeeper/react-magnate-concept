@@ -84,7 +84,6 @@ const StonewareSub = () => {
                 "расчетное исполнение",
               ],
             ]}
-            imgWidth={"62rem"}
           />
         </div>
       </div>
