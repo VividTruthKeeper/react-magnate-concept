@@ -1,5 +1,5 @@
 // IMPORT MODULES
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 // IMPORT GLOBAL COMPONENTS
 import ShortNav from "../components/Global/ShortNav";
@@ -40,8 +40,26 @@ const PortfolioExtended = () => {
     [Gal_1, Gal_2, Gal_3, Gal_4, Gal_5, Gal_6],
   ]);
 
-  // This is a state to track the active image's index in the array of images
+  // !!! ATTENTION HERE !!!
+  // I set this useEffect to leave no unused variables
 
+  // setImages is further to be used when new images are added, like this:
+
+  // const FUNCTION = (ARGS) => {
+  //  const NEW_IMAGES = API.fetch()...
+  // setImages([...images, NEW_IMAGES])
+  // }
+
+  // This will automatically update the ImageSlider component!
+
+  // EMPTY USEEFFECT !!!!!!!!!!!!!!!!!!!!!!
+  useEffect(() => {
+    setImages((i) => [...i]);
+  }, []);
+
+  // EMPTY USEEFFECT !!!!!!!!!!!!!!!!!!!!!!
+
+  // This is a state to track the active image's index in the array of images
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   return (
