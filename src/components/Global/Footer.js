@@ -1,5 +1,6 @@
 // IMPORT MODULES
 import React from "react";
+import { Link } from "react-router-dom";
 
 // IMPORT IMAGES
 import Logo from "../../images/main_logo.jpg";
@@ -13,9 +14,9 @@ const Footer = () => {
         <div className="footer-inner">
           <div className="footer__left">
             <div className="footer__left-first">
-              <div className="logo">
+              <Link to={"/"} className="logo">
                 <img src={Logo} alt="Magnat-Logo" />
-              </div>
+              </Link>
             </div>
             <div className="footer__left-second">
               <h2 className="footer__left-title">
