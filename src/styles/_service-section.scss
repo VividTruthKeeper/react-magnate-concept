@@ -10,13 +10,6 @@
   margin-top: 5rem;
 }
 
-.service-section-outer {
-  overflow: hidden;
-  opacity: 0;
-  transform: translateX(-20rem);
-  transition: 0.5s all ease;
-}
-
 .service-content {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -80,5 +73,23 @@
     transform: translateY(10rem);
     transition: opacity 0.4s ease-in-out;
     cursor: default;
+  }
+}
+
+// MEDIA
+
+@media screen and (max-width: 1300px) {
+  .service-section {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .service-content {
+    width: 128rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .service-block {
+    min-height: 70rem;
   }
 }

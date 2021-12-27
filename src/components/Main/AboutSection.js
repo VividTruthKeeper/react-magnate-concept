@@ -1,7 +1,6 @@
 // IMPORT MODULES
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { useInView } from "react-intersection-observer";
 
 // IMPORT IMAGES
 import Img from "../../images/about_section.jpg";
@@ -10,21 +9,11 @@ import Img from "../../images/about_section.jpg";
 import SectionTitle from "../Global/SectionTitle";
 
 const AboutSection = () => {
-  const [ref, inView] = useInView({
-    threshold: 0.3,
-  });
-  const animated = useRef();
-  useEffect(() => {
-    if (inView) {
-      animated.current.style.transform = "scale(1)";
-      animated.current.style.opacity = "1";
-      animated.current.style.transition = "0.5s all ease";
-    }
-  }, [inView]);
+
 
   return (
-    <div ref={ref} className="container">
-      <div ref={animated} className="about-section">
+    <div className="container">
+      <div className="about-section">
         <div className="about__left">
           <SectionTitle title={"Узнайте кто мы"} bigTitle={"О компании"} />
           <div className="about__left-content">

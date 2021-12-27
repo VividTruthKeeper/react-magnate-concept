@@ -17,6 +17,10 @@
   }
 }
 
+.nav-burger {
+  display: none;
+}
+
 .nav__inner {
   padding: 5rem 0 0rem 0;
 }
@@ -60,6 +64,7 @@
 
 .short-nav {
   .logo {
+    display: block;
     &::before {
       height: 30.5rem;
       bottom: -15.5rem;
@@ -130,5 +135,112 @@
 .nav__right {
   .dropdown {
     gap: 0rem;
+  }
+}
+
+// MEDIA
+@media screen and (max-width: 1000px) {
+  .nav__right {
+    ul {
+      a,
+      h4 {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .nav__right {
+    ul {
+      display: none;
+    }
+  }
+
+  .nav-burger {
+    display: block;
+    cursor: pointer;
+
+    &.active {
+      .burger-line {
+        width: 3.6rem;
+        transition: 0.4s all ease;
+
+        &::before {
+          width: 2.4rem;
+          left: 0rem;
+          transition: 0.4s all ease;
+        }
+
+        &::after {
+          width: 2.4rem;
+          right: 0rem;
+          transition: 0.4s all ease;
+        }
+      }
+    }
+  }
+
+  .line-wrapper {
+    width: 3.6rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .burger-line {
+    height: 0.5rem;
+    width: 2.4rem;
+    background: #fff;
+    content: "";
+    border: none;
+    border-radius: 5rem;
+    position: relative;
+    transition: 0.4s all ease;
+
+    &::before {
+      height: 0.5rem;
+      width: 3.6rem;
+      background: #fff;
+      content: "";
+      border: none;
+      position: absolute;
+      border-radius: 5rem;
+      bottom: 1rem;
+      right: 0;
+      left: -1.2rem;
+      transition: 0.4s all ease;
+    }
+
+    &::after {
+      height: 0.5rem;
+      width: 3.6rem;
+      background: #fff;
+      content: "";
+      border: none;
+      position: absolute;
+      border-radius: 5rem;
+      top: 1rem;
+      right: 0;
+      transition: 0.4s all ease;
+    }
+  }
+}
+
+// MEDIA
+@media screen and (max-width: 700px) {
+  .nav {
+    margin-bottom: 5rem;
+  }
+
+  .logo {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .deco-horizontal {
+    height: 8rem;
   }
 }

@@ -71,6 +71,11 @@ const SliderNav = () => {
                   <Link to="/contact_us">Контакты</Link>
                 </li>
               </ul>
+              <div className="nav-burger">
+                <div className="line-wrapper">
+                  <div className="burger-line"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

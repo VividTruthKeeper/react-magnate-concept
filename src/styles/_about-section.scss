@@ -1,6 +1,4 @@
 .about-section {
-  transform: scale(0.5);
-  opacity: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -89,5 +87,46 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about__left-title {
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+
+  .about__left-content {
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  .pink-link-default {
+    font-size: 1.4rem;
+    padding: 1.1rem 3.5rem;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-section {
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about__left-title {
+    h2 {
+      font-size: 2rem;
+    }
+
+    h6 {
+      font-size: 1.2rem;
+    }
   }
 }

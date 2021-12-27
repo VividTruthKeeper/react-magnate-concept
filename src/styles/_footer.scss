@@ -9,7 +9,7 @@
 .footer-inner {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 
   h2,
   a {
@@ -28,7 +28,8 @@
 .footer__left {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 
 .footer__right {
@@ -84,4 +85,21 @@
   border-top: 0.1rem solid rgba(254, 254, 254, 0.3);
   border-bottom: 0.1rem solid rgba(254, 254, 254, 0.3);
   background: transparent;
+}
+
+// MEDIA
+@media screen and (max-width: 700px) {
+  .footer-inner {
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+
+  .logo {
+    &::before {
+      width: 7.9rem;
+      bottom: -63%;
+      height: 18rem;
+    }
+  }
 }

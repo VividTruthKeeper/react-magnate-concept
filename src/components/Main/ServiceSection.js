@@ -1,31 +1,17 @@
 // IMPORT MODULES
-import React, { useRef, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 
 // IMPORT GLOBAL COMPONENTS
 import SectionTitle from "../Global/SectionTitle";
 
 const ServiceSection = () => {
-  const animated = useRef();
-
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      animated.current.style.transform = "translateX(0rem)";
-      animated.current.style.opacity = "1";
-      animated.current.style.transition = "0.5s all ease";
-    }
-  }, [inView]);
 
   return (
-    <section ref={animated} className="service-section-outer">
+    <section className="service-section-outer">
       <div className="container">
         <SectionTitle title={"Узнайте что мы можем"} bigTitle="Наши услуги" />
       </div>
-      <div ref={ref} className="service-section">
+      <div className="service-section">
         <div className="service-content">
           <div className="service-block">
             <h3>Проектирование</h3>

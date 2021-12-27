@@ -34,7 +34,7 @@
 
     &::after{
         content: "";
-        background: linear-gradient(-45deg, #e73c7e, #23d5ab, #ee7752, #23a6d5, yellow, violet, blue);
+        background: linear-gradient(-45deg, #e73c7e, #23d5ab, #ee7752, yellow, #23a6d5 );
         position: absolute;
         background-size: 400% 400%;
         width: 10rem;
