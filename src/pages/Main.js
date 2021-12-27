@@ -20,9 +20,9 @@ const Main = () => {
   }, []);
 
   useEffect(() => {
-    setTimeout(() => {
+    window.addEventListener('load', () => {
       setIsLoading(false);
-    }, 2000)
+    })
 
   }, [])
   return (
