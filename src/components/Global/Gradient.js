@@ -12,7 +12,7 @@ const Gradient = ({isLoading}) => {
     }, [isLoading])
 
     return(
-        <div className="gradient-bg" style={isLoading ? {display:"block"} : {display: 'none'}}>
+        <div className="gradient-bg" style={isLoading ? {opacity: "1"} : {opacity: '0', transition: "all 0.5s ease"}}>
             <div className="blur-bg">
                 <div className="gradient-img">
                     <img src={Logo} alt="logo" />
