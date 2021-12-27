@@ -13,13 +13,15 @@ const Main = () => {
   const [isLoading, setIsLoading] = useState(true); 
 
   useEffect(() => {
-    setIsLoading(false)
     window.scrollTo(0, 0);
     window.addEventListener("beforeunload", () => {
       window.scrollTo(0, 0);
     });
-
   }, []);
+
+  useEffect(() => {
+      setIsLoading(false);
+  }, [])
   return (
     <div className="main">
       <Gradient isLoading={isLoading} />

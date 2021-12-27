@@ -1,10 +1,10 @@
 import React from "react";
 
-import Logo from '../images/main_logo.jpg'
+import Logo from '../../images/main_logo.jpg'
 
 const Gradient = ({isLoading}) => {
     return(
-        <div className="gradient-bg" style={!isLoading ? {display:"none"} : {display: 'block'}}>
+        <div className="gradient-bg" style={isLoading ? {display:"block"} : {display: 'none'}}>
             <div className="blur-bg">
                 <div className="gradient-img">
                     <img src={Logo} alt="logo" />
