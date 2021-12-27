@@ -6,7 +6,7 @@ import AboutSection from "../components/Main/AboutSection";
 import ServiceSection from "../components/Main/ServiceSection";
 import ProjectSection from "../components/Main/ProjectSection";
 import SliderNav from "../components/Main/SliderNav";
-import Gradient from "../pages/Gradient";
+import Gradient from "../components/Global/Gradient";
 
 const Main = () => {
 
