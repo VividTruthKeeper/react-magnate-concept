@@ -18,13 +18,9 @@ const FlexGallery = ({ images, titles, links, linkTitles }) => {
             <div className="gallery-block-inner">
               {images[i].map((img, i) => {
                 return (
-                  <div
-                    className="img-wrapper"
-                    key={i}
-                    style={{
-                      background: `url(${img})`,
-                    }}
-                  ></div>
+                  <div className="img-wrapper" key={i}>
+                    <img src={img} alt="" />
+                  </div>
                 );
               })}
             </div>

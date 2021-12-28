@@ -152,6 +152,12 @@
 }
 
 @media screen and (max-width: 760px) {
+  .short-nav {
+    .nav__inner__bottom {
+      padding: 6rem 0 0 10rem;
+    }
+  }
+
   .nav__right {
     ul {
       display: none;
@@ -243,5 +249,14 @@
 
   .deco-horizontal {
     height: 8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .short-nav {
+    .nav__inner__bottom {
+      padding-left: 0;
+      justify-content: flex-start;
+    }
   }
 }

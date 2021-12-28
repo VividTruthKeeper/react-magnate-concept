@@ -5,13 +5,17 @@
 }
 
 .img-wrapper {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-clip: content-box;
-  background-size: cover;
-  width: 30.5rem;
-  height: 30.5rem;
+  max-width: 30.5rem;
+  max-height: 30.5rem;
+  width: 100%;
+  height: 100%;
   border-radius: 1rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 .flex-gallery {
@@ -23,5 +27,26 @@
     h2 {
       font-size: 2.4rem;
     }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .gallery-block-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .img-wrapper {
+    max-width: unset;
+    max-height: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery-block-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .section-link a {
+    font-size: 1.2rem;
   }
 }

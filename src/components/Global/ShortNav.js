@@ -1,6 +1,9 @@
 // IMPORT MODULES
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+
+// IMPORT COMPONENTS
+import BurgerPopup from "./BurgerPopup";
 
 // IMPORT IMAGES
 import Logo from "../../images/main_logo.jpg";
@@ -11,6 +14,8 @@ const ShortNav = ({ background, centerData }) => {
     const object = reference.current;
     object.classList.toggle("active");
   };
+  const [isVisible, setIsVisible] = useState(false);
+  const burger = useRef();
   return (
     <div
       className="nav short-nav"
@@ -22,6 +27,7 @@ const ShortNav = ({ background, centerData }) => {
         backgroundSize: "cover",
       }}
     >
+      <BurgerPopup isVisible={isVisible} setIsVisible={setIsVisible} />
       <div className="deco-horizontal"></div>
       <div className="container">
         <div className="nav__inner">
@@ -74,6 +80,18 @@ const ShortNav = ({ background, centerData }) => {
                   <Link to="/contact_us">Контакты</Link>
                 </li>
               </ul>
+              <div
+                ref={burger}
+                className="nav-burger"
+                onClick={() => {
+                  setIsVisible(!isVisible);
+                  burger.current.classList.toggle("active");
+                }}
+              >
+                <div className="line-wrapper">
+                  <div className="burger-line"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="nav__inner__bottom">
@@ -82,11 +100,6 @@ const ShortNav = ({ background, centerData }) => {
                 <h6>{centerData[0]}</h6>
                 <h2>{centerData[1]}</h2>
               </div>
-              {/* <div className="slide__bottom">
-                <div className="slide__bottom-text">
-                  <p>{centerData[2]}</p>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
