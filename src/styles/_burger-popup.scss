@@ -80,8 +80,8 @@
     gap: 3rem;
     max-height: 0;
     height: fit-content;
-    // overflow: hidden;
     transition: 0.5s all ease;
+    pointer-events: none;
 
     a {
       font-size: 1.4rem;
@@ -98,6 +98,7 @@
 }
 
 .popup-dropdown.active {
+  pointer-events: all;
   max-height: 70rem;
   margin-bottom: 4rem;
   transition: 0.5s all ease;

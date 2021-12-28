@@ -1,9 +1,10 @@
 // IMPORT MODULES
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 
 // IMPORT PERMANENT COMPONENTS
 import Footer from "./components/Global/Footer";
+import Gradient from "./components/Global/Gradient";
 
 // IMPORT PAGES
 import Main from "./pages/Main";
@@ -20,14 +21,19 @@ import WindowSub from "./pages/WindowSub";
 import ParquetSub from "./pages/ParquetSub";
 import StonewareSub from "./pages/StonewareSub";
 
-import BurgerPopup from "./components/Global/BurgerPopup";
-
 // IMPORT STYLES
 import "./styles/style.scss";
 
 function App() {
+  useEffect(() => {
+    window.addEventListener("load", () => {
+      setIsLoading(false);
+    });
+  }, []);
+  const [isLoading, setIsLoading] = useState(true);
   return (
     <div className="App">
+      <Gradient isLoading={isLoading} />
       <Routes>
         <Route path="/" exact element={<Main />} />
         <Route path="/service_furniture" element={<Furniture />} />
@@ -46,8 +52,6 @@ function App() {
         <Route path="/portfolio/windows/sub" element={<WindowSub />} />
         <Route path="/portfolio/parquet/sub" element={<ParquetSub />} />
         <Route path="/portfolio/stoneware/sub" element={<StonewareSub />} />
-        <Route path="/popup" element={<BurgerPopup />} />
-        {/* <Route path="/gradient" element={<Gradient />} /> */}
       </Routes>
       {/* I put this component outside of Routes because it is displayed on all pages. */}
       <Footer />
