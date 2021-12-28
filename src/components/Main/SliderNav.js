@@ -1,22 +1,26 @@
 // IMPORT MODULES
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 // IMPORT COMPONENTS
 import BgSlider from "./BgSlider";
+import BurgerPopup from "../Global/BurgerPopup";
 
 // IMPORT IMAGES
 import Logo from "../../images/main_logo.jpg";
 
 const SliderNav = () => {
+  const [isVisible, setIsVisible] = useState(false);
   const Dropdown = useRef();
   const DropHandler = (reference) => {
     const object = reference.current;
     object.classList.toggle("active");
   };
+  const burger = useRef();
   return (
     <nav className="nav">
       {/* Background slider */}
+      <BurgerPopup isVisible={isVisible} />
       <BgSlider />
       {/* A special div to make line horizontal line deco. I found it best among other possibilities. */}
       <div className="deco-horizontal"></div>
@@ -71,7 +75,14 @@ const SliderNav = () => {
                   <Link to="/contact_us">Контакты</Link>
                 </li>
               </ul>
-              <div className="nav-burger">
+              <div
+                ref={burger}
+                className="nav-burger"
+                onClick={() => {
+                  setIsVisible(!isVisible);
+                  burger.current.classList.toggle("active");
+                }}
+              >
                 <div className="line-wrapper">
                   <div className="burger-line"></div>
                 </div>

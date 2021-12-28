@@ -20,16 +20,15 @@ import WindowSub from "./pages/WindowSub";
 import ParquetSub from "./pages/ParquetSub";
 import StonewareSub from "./pages/StonewareSub";
 
+import BurgerPopup from "./components/Global/BurgerPopup";
 
 // IMPORT STYLES
 import "./styles/style.scss";
 
 function App() {
-
   return (
     <div className="App">
       <Routes>
-        
         <Route path="/" exact element={<Main />} />
         <Route path="/service_furniture" element={<Furniture />} />
         <Route path="/service_engineering" element={<Engineering />} />
@@ -47,6 +46,7 @@ function App() {
         <Route path="/portfolio/windows/sub" element={<WindowSub />} />
         <Route path="/portfolio/parquet/sub" element={<ParquetSub />} />
         <Route path="/portfolio/stoneware/sub" element={<StonewareSub />} />
+        <Route path="/popup" element={<BurgerPopup />} />
         {/* <Route path="/gradient" element={<Gradient />} /> */}
       </Routes>
       {/* I put this component outside of Routes because it is displayed on all pages. */}

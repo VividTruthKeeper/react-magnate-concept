@@ -1,0 +1,120 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100vw;
+  height: 100vh;
+  background: $base-black;
+  overflow: hidden;
+  transform: translateX(100vw);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+
+  &.active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.5s ease;
+  }
+}
+
+.popup-inner {
+  padding: 10rem 0;
+
+  li {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  h4,
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #fff;
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+    padding-bottom: 0.3rem;
+
+    &:hover {
+      transition: all 0.3s ease;
+      border-bottom: 0.2rem solid $base-pink;
+    }
+  }
+}
+
+.popup-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+  li {
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    &.dropdown-li {
+      margin: 0;
+    }
+  }
+
+  .popup-dropdown {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-height: 0;
+    height: fit-content;
+    overflow: hidden;
+    transition: 0.5s all ease;
+
+    a {
+      font-size: 1.4rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    li {
+      opacity: 0;
+      transition: 0.5s all ease;
+      padding-left: 8rem;
+    }
+  }
+}
+
+.popup-dropdown.active {
+  max-height: 30rem;
+  margin-bottom: 4rem;
+  transition: 0.5s all ease;
+  .drop-1 {
+    transition: 0.5s all ease;
+    opacity: 1;
+    padding-left: 2rem;
+  }
+  .drop-2 {
+    transition: 0.7s all ease;
+    opacity: 1;
+    padding-left: 2rem;
+  }
+  .drop-3 {
+    transition: 0.9s all ease;
+    opacity: 1;
+    padding-left: 2rem;
+  }
+  .drop-4 {
+    transition: 1.1s all ease;
+    opacity: 1;
+    padding-left: 2rem;
+  }
+  .drop-5 {
+    transition: 1.3s all ease;
+    opacity: 1;
+    padding-left: 2rem;
+  }
+}

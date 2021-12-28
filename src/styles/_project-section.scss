@@ -114,6 +114,7 @@
 @media screen and (max-width: 1200px) {
   .project-section-content {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .small-img,
