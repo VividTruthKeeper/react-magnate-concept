@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-const BurgerPopup = ({ isVisible }) => {
+const BurgerPopup = ({ isVisible, setIsVisible }) => {
   useEffect(() => {
     if (isVisible) {
       popup.current.classList.add("active");
@@ -11,7 +11,10 @@ const BurgerPopup = ({ isVisible }) => {
       popup.current.classList.remove("active");
       document.body.style.overflowY = "visible";
     }
-  }, [isVisible]);
+    window.addEventListener("beforeunload", () => {
+      setIsVisible(false);
+    });
+  }, [isVisible, setIsVisible]);
   const trig = useRef();
   const dropdown = useRef();
   const popup = useRef();
@@ -33,21 +36,21 @@ const BurgerPopup = ({ isVisible }) => {
             <li className="dropdown-li">
               <ul ref={dropdown} className="popup-dropdown">
                 <li className="drop-1">
-                  <Link to="/service-engineering">Проектирование</Link>
+                  <Link to="/service_engineering">Проектирование</Link>
                 </li>
                 <li className="drop-2">
-                  <Link to="/service-design">Дизайн</Link>
+                  <Link to="/service_design">Дизайн</Link>
                 </li>
                 <li className="drop-3">
-                  <Link to="/service-construction">
+                  <Link to="/service_construction">
                     Строительные и отделочные работы
                   </Link>
                 </li>
                 <li className="drop-4">
-                  <Link to="/service-supervision">Авторский надзор</Link>
+                  <Link to="/service_supervision">Авторский надзор</Link>
                 </li>
                 <li className="drop-5">
-                  <Link to="/service-furniture">
+                  <Link to="/service_furniture">
                     Мебель, материалы и элементы декора
                   </Link>
                 </li>

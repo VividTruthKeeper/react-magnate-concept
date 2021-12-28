@@ -20,7 +20,7 @@ const SliderNav = () => {
   return (
     <nav className="nav">
       {/* Background slider */}
-      <BurgerPopup isVisible={isVisible} />
+      <BurgerPopup isVisible={isVisible} setIsVisible={setIsVisible} />
       <BgSlider />
       {/* A special div to make line horizontal line deco. I found it best among other possibilities. */}
       <div className="deco-horizontal"></div>

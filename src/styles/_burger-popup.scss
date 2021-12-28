@@ -5,8 +5,10 @@
   z-index: 200;
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
+
   background: $base-black;
-  overflow: hidden;
+  // overflow: hidden;
   transform: translateX(100vw);
   opacity: 0;
   pointer-events: none;
@@ -21,7 +23,14 @@
 }
 
 .popup-inner {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
   padding: 10rem 0;
+  // padding-bottom: 20rem;
 
   li {
     display: block;
@@ -71,7 +80,7 @@
     gap: 3rem;
     max-height: 0;
     height: fit-content;
-    overflow: hidden;
+    // overflow: hidden;
     transition: 0.5s all ease;
 
     a {
@@ -89,7 +98,7 @@
 }
 
 .popup-dropdown.active {
-  max-height: 30rem;
+  max-height: 70rem;
   margin-bottom: 4rem;
   transition: 0.5s all ease;
   .drop-1 {

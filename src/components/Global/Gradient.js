@@ -16,7 +16,7 @@ const Gradient = ({ isLoading }) => {
       className="gradient-bg"
       style={
         isLoading
-          ? { opacity: "1" }
+          ? { opacity: "1", pointerEvents: "all" }
           : { opacity: "0", transition: "all 0.5s ease" }
       }
     >

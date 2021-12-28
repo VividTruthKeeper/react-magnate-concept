@@ -9,8 +9,7 @@ import SliderNav from "../components/Main/SliderNav";
 import Gradient from "../components/Global/Gradient";
 
 const Main = () => {
-
-  const [isLoading, setIsLoading] = useState(true); 
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,11 +19,11 @@ const Main = () => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener('load', () => {
+    window.addEventListener("load", () => {
       setIsLoading(false);
-    })
+    });
+  }, []);
 
-  }, [])
   return (
     <div className="main">
       <Gradient isLoading={isLoading} />

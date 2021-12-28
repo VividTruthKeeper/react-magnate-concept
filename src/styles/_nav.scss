@@ -163,10 +163,6 @@
     cursor: pointer;
 
     &.active {
-      body {
-        overflow: hidden;
-      }
-
       .burger-line {
         width: 3.6rem;
         transition: 0.4s all ease;

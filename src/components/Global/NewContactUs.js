@@ -1,6 +1,5 @@
 // IMPORT MODULES
-import React, { useRef, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 
 // IMPORT COMPONENTS
 import SectionTitle from "./SectionTitle";
@@ -12,20 +11,9 @@ import Whatsapp from "../../svg/whatsapp.svg";
 import Instagram from "../../svg/instagram.svg";
 
 const NewContactUs = () => {
-  const animated = useRef();
-  const [ref, inView] = useInView({
-    threshold: 0.3,
-  });
-  useEffect(() => {
-    if (inView) {
-      animated.current.style.transform = "scale(1)";
-      animated.current.style.opacity = "1";
-      animated.current.style.transition = "0.5s all ease";
-    }
-  }, [inView]);
   return (
-    <div ref={animated} className="new-contact-us">
-      <div ref={ref} className="container">
+    <div className="new-contact-us">
+      <div className="container">
         <SectionTitle
           title={"Не знаете, какое окно лучше подойдет для Вашего помещения? "}
           bigTitle={
