@@ -32,3 +32,23 @@ body {
   gap: 5rem;
   padding-bottom: 5rem;
 }
+
+@media screen and (max-width: 800px) {
+  .content-block {
+    gap: 3rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content-block {
+    gap: 2.5rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content-block {
+    gap: 2rem;
+  }
+}

@@ -114,8 +114,6 @@
 // New contact us
 .new-contact-us {
   padding-bottom: 12rem;
-  transform: scale(0.5);
-  opacity: 0;
 }
 
 .new-cu-content {
@@ -226,5 +224,34 @@
     text-align: right;
     align-self: center;
     font-size: 1.8rem;
+  }
+}
+
+// MEDIA
+
+@media screen and (max-width: 700px) {
+  .list-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .new-cu-content {
+    ul {
+      grid-template-columns: 1fr;
+    }
+  }
+  .list-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .list-img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .list-text {
+    font-size: 1.2rem;
   }
 }

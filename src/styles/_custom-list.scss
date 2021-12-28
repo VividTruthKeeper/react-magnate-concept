@@ -38,3 +38,32 @@
   opacity: 0.3;
   border: none;
 }
+
+// MEDIA
+@media screen and (max-width: 800px) {
+  .custom-list-inner {
+    padding-top: 3rem;
+  }
+
+  .custom-list-item {
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .custom-list-item {
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .custom-list-item {
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}

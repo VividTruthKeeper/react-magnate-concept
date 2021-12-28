@@ -8,3 +8,43 @@
     line-height: 3.2rem;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .new-contact-us {
+    padding-bottom: 5rem;
+  }
+
+  .indent-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .indent-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .indent-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
