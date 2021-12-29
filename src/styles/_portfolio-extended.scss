@@ -8,3 +8,12 @@
     cursor: pointer;
   }
 }
+
+// MEDIA
+@media screen and (max-width: 600px) {
+  .portfolio-extended {
+    .pink-link-default {
+      width: 100%;
+    }
+  }
+}

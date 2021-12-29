@@ -8,3 +8,10 @@
     font-size: 1.4rem;
   }
 }
+
+// MEDIA
+@media screen and (max-width: 500px) {
+  .section-link a {
+    font-size: 1.2rem;
+  }
+}

@@ -83,6 +83,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .grid-gallery {
+    gap: 2rem;
+  }
   .gg__left__top {
     flex-direction: column;
   }

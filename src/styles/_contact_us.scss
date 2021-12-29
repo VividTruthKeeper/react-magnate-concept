@@ -181,6 +181,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   gap: 2rem;
 
   h5 {
@@ -229,9 +230,31 @@
 
 // MEDIA
 
+@media screen and (max-width: 900px) {
+  .cu-form-top {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 700px) {
+  .cu-form-bottom p,
+  .cu-form-bottom input,
+  .cu-form-bottom textarea,
+  .input-block h5,
   .list-text {
     font-size: 1.6rem;
+  }
+  .cu-form-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2rem;
+
+    .pink-link-default {
+      max-width: unset;
+      width: 100%;
+      padding: 2rem 3.5rem;
+    }
   }
 }
 
