@@ -249,12 +249,11 @@
     flex-direction: column-reverse;
     justify-content: center;
     gap: 2rem;
-
-    .pink-link-default {
-      max-width: unset;
-      width: 100%;
-      padding: 2rem 3.5rem;
-    }
+  }
+  .pink-link-default {
+    max-width: unset;
+    width: 100%;
+    padding: 2rem 3.5rem;
   }
 }
 
