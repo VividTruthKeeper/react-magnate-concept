@@ -35,3 +35,50 @@
     font-weight: normal;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .type-block {
+    gap: 2rem;
+    .about__left-title {
+      h2 {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .window-sub-inner {
+    .type-demo {
+      flex-direction: column;
+    }
+  }
+  .type-block {
+    width: 100%;
+    .about__left-title {
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+
+    .type-img {
+      max-width: unset !important;
+      max-height: unset;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .type-block {
+    .about__left-title {
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .type-list {
+    h6 {
+      font-size: 1.2rem;
+    }
+  }
+}
