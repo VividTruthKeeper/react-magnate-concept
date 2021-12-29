@@ -75,3 +75,16 @@
     overflow-y: scroll;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .advantage-title {
+    font-size: 1.4rem;
+  }
+  .advantage-text {
+    font-size: 1rem;
+  }
+  .advantage-block {
+    min-height: unset;
+    height: fit-content;
+  }
+}

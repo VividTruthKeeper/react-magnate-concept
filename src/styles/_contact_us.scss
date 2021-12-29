@@ -260,6 +260,7 @@
 
     p {
       order: 0;
+      text-align: left;
     }
   }
   .pink-link-default {
@@ -287,5 +288,9 @@
   }
   .list-text {
     font-size: 1.2rem;
+  }
+
+  .pink-link-default {
+    padding: 1.5rem 2rem;
   }
 }

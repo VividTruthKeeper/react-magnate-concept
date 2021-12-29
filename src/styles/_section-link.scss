@@ -15,3 +15,17 @@
     font-size: 1.2rem;
   }
 }
+
+@media screen and (max-width: 470px) {
+  .section-link {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .section-link a {
+    font-size: 1.4rem;
+  }
+}
