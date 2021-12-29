@@ -132,14 +132,35 @@
 
 // MEDIA
 
-@media screen and (max-width: 1100px) {
+// @media screen and (max-width: 1100px) {
+//   .image {
+//     max-height: 80%;
+//     max-width: 80%;
+//   }
+// }
+@media screen and (max-height: 1200px) {
   .image {
-    max-height: 80%;
-    max-width: 80%;
+    max-height: 50rem;
+    max-width: 50rem;
+  }
+  .image-slider {
+    padding-top: 3rem;
+    padding-bottom: 9rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .image {
+    max-height: 40rem;
+    max-width: 40rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .image {
+    max-height: 30rem;
+    max-width: 30rem;
+  }
   .img-nav {
     display: none;
   }

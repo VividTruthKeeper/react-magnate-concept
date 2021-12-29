@@ -26,6 +26,8 @@ const ImageSlider = ({
   const prev = useRef();
   const prev_2 = useRef();
   const next_2 = useRef();
+  const prev_2Img = useRef();
+  const next_2Img = useRef();
   return (
     <div
       ref={slider}
@@ -34,9 +36,11 @@ const ImageSlider = ({
         if (
           e.target !== prev.current &&
           e.target !== prev_2.current &&
+          e.target !== prev_2Img.current &&
           e.target !== prevImg.current &&
           e.target !== next.current &&
           e.target !== next_2.current &&
+          e.target !== next_2Img.current &&
           e.target !== nextImg.current &&
           e.target !== numbers.current &&
           e.target !== numberSpan.current &&
@@ -96,7 +100,7 @@ const ImageSlider = ({
                 }
               }}
             >
-              <img ref={prevImg} src={Prev} alt="prev" />
+              <img ref={prev_2Img} src={Prev} alt="prev" />
             </div>
             <div
               className="image-next img-nav adaptive"
@@ -107,7 +111,7 @@ const ImageSlider = ({
                 }
               }}
             >
-              <img ref={nextImg} src={Next} alt="next" />
+              <img ref={next_2Img} src={Next} alt="next" />
             </div>
           </div>
         </div>
