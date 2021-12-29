@@ -50,4 +50,28 @@
   font-size: 1.2rem;
   color: #fff;
   text-align: center;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .advantage-blocks-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .advantage-blocks-wrapper {
+    grid-template-columns: 1fr;
+    height: 212.8rem;
+  }
+
+  .advantage-block {
+    justify-self: center;
+  }
+
+  .advantages-content {
+    min-height: unset;
+    max-height: 60rem;
+    overflow-y: scroll;
+  }
 }
