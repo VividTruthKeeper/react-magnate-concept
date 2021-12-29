@@ -246,9 +246,21 @@
   }
   .cu-form-bottom {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
+
+    button {
+      max-width: unset;
+
+      &.pink-link-default {
+        order: 1;
+      }
+    }
+
+    p {
+      order: 0;
+    }
   }
   .pink-link-default {
     max-width: unset;

@@ -65,7 +65,7 @@
   li {
     cursor: pointer;
     &:not(:last-child) {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
 
     &.dropdown-li {
@@ -87,6 +87,7 @@
       font-size: 1.4rem;
       overflow: hidden;
       text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     li {
