@@ -2,7 +2,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 // IMPORT COMPONENTS
 import SectionTitle from "../Global/SectionTitle";
 import ItemTitle from "../Global/ItemTitle";
@@ -16,7 +15,6 @@ import Img_5 from "../../images/project_section_5.jpg";
 import Img_6 from "../../images/project_section_6.jpg";
 
 const ProjectSection = () => {
-
   return (
     <div className="project-section-outer">
       <div className="container">
@@ -94,7 +92,7 @@ const ProjectSection = () => {
             </div>
           </div>
           <div className="project-section-button">
-            <Link to="/" className="pink-link-default">
+            <Link to="/portfolio" className="pink-link-default">
               Посмотреть все работы
             </Link>
           </div>

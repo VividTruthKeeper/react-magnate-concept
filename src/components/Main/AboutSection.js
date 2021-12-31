@@ -9,8 +9,6 @@ import Img from "../../images/about_section.jpg";
 import SectionTitle from "../Global/SectionTitle";
 
 const AboutSection = () => {
-
-
   return (
     <div className="container">
       <div className="about-section">
@@ -33,7 +31,7 @@ const AboutSection = () => {
             </p>
           </div>
           <div className="about__left-link">
-            <Link to="/" className="pink-link-default">
+            <Link to="/portfolio" className="pink-link-default">
               Посмотреть все работы
             </Link>
           </div>
