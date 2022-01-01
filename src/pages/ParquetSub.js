@@ -1,5 +1,5 @@
 // IMPORT MODULES
-import React from "react";
+import React, { useEffect } from "react";
 
 // IMPORT GLOBAL COMPONENTS
 import ShortNav from "../components/Global/ShortNav";
@@ -16,6 +16,9 @@ import Parquet_2 from "../images/parquet_sub_2.jpg";
 import Parquet_3 from "../images/parquet_sub_3.jpg";
 
 const ParquetSub = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="window-sub">
       <ShortNav

@@ -1,5 +1,5 @@
 // IMPORT MODULES
-import React from "react";
+import React, { useEffect } from "react";
 
 // IMPORT GLOBAL COMPONENTS
 import ShortNav from "../components/Global/ShortNav";
@@ -7,8 +7,12 @@ import NewContactUs from "../components/Global/NewContactUs";
 
 // IMPORT IMAGES
 import Img from "../images/contact_us.jpg";
+import { useEffect } from "react/cjs/react.development";
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="contact-us">
       <ShortNav

@@ -19,6 +19,9 @@ import Gal_5 from "../images/project_section_5.jpg";
 import Gal_6 from "../images/project_section_6.jpg";
 
 const PortfolioExtended = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const section = useRef(null);
   const slider = useRef(null);
 

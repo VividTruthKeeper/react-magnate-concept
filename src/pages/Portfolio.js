@@ -1,5 +1,5 @@
 // IMPORT MODULES
-import React from "react";
+import React, { useEffect } from "react";
 
 // IMPORT GLOBAL COMPONENTS
 import ShortNav from "../components/Global/ShortNav";
@@ -25,6 +25,9 @@ import Parquet_3 from "../images/portfolio_parquet_3.jpg";
 import Parquet_4 from "../images/portfolio_parquet_4.jpg";
 
 const Porfolio = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="portfolio">
       <ShortNav background={Img} centerData={["Ознакомьтесь", "Портфолио"]} />

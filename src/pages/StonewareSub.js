@@ -1,5 +1,5 @@
 // IMPORT MODULES
-import React from "react";
+import React, { useEffect } from "react";
 
 // IMPORT GLOBAL COMPONENTS
 import ShortNav from "../components/Global/ShortNav";
@@ -15,6 +15,9 @@ import Stoneware_1 from "../images/stoneware_sub_1.jpg";
 import Stoneware_2 from "../images/stoneware_sub_2.jpg";
 
 const StonewareSub = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="window-sub">
       <ShortNav
