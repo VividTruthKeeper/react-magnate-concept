@@ -7,7 +7,6 @@ import NewContactUs from "../components/Global/NewContactUs";
 
 // IMPORT IMAGES
 import Img from "../images/contact_us.jpg";
-import { useEffect } from "react/cjs/react.development";
 
 const ContactUs = () => {
   useEffect(() => {
