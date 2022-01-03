@@ -1,16 +1,66 @@
-.service-section {
-  transition: 0.5s all ease-in-out;
+.service-bg {
+  position: absolute;
   background-position: bottom center;
   background-repeat: no-repeat;
   background-clip: content-box;
   background-size: cover;
+  width: 100%;
+  height: 90rem;
+  top: 0rem;
+  left: 0;
+  transition: 0.4s all ease;
+}
+
+.img-1 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/service_section.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+  opacity: 1;
+}
+.img-2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/service_bg_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+}
+.img-3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/service_bg_3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+}
+.img-4 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/service_bg_4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+}
+.img-5 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/service_bg_5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: cover;
+}
+
+.service-section {
   margin-bottom: 12rem;
   margin-top: 5rem;
+  background: #242424;
 }
 
 .service-content {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
@@ -22,6 +72,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 
   &::after {
     position: absolute;
@@ -91,5 +142,8 @@
 @media screen and (max-width: 800px) {
   .service-block {
     min-height: 70rem;
+  }
+  .service-bg {
+    height: 70rem;
   }
 }
