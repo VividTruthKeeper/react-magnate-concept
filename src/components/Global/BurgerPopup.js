@@ -15,11 +15,15 @@ const BurgerPopup = ({ isVisible, setIsVisible }) => {
       setIsVisible(false);
     });
   }, [isVisible, setIsVisible]);
+  const dropSub = useRef();
+  const dropTrig = useRef();
   const trig = useRef();
   const dropdown = useRef();
   const popup = useRef();
   const DropdownHandler = (obj) => {
-    obj.current.classList.toggle("active");
+    obj.forEach((el) => {
+      el.current.classList.toggle("active");
+    });
   };
   return (
     <section ref={popup} className="popup">
@@ -29,7 +33,13 @@ const BurgerPopup = ({ isVisible, setIsVisible }) => {
             <li
               ref={trig}
               className="drop-trig"
-              onClick={() => DropdownHandler(dropdown)}
+              onClick={() => {
+                if (dropSub.current.classList.contains("active")) {
+                  DropdownHandler([dropdown, dropSub]);
+                  return;
+                }
+                DropdownHandler([dropdown]);
+              }}
             >
               <h4>Услуги</h4>
             </li>
@@ -49,10 +59,28 @@ const BurgerPopup = ({ isVisible, setIsVisible }) => {
                 <li className="drop-4">
                   <Link to="/service_supervision">Авторский надзор</Link>
                 </li>
-                <li className="drop-5">
-                  <Link to="/service_furniture">
-                    Мебель, материалы и элементы декора
-                  </Link>
+                <li
+                  ref={dropTrig}
+                  className="drop-5"
+                  onClick={() => dropSub.current.classList.toggle("active")}
+                >
+                  <h4>Мебель, материалы и элементы декора</h4>
+                </li>
+              </ul>
+            </li>
+            <li className="dropdown-li">
+              <ul ref={dropSub} className="popup-dropdown addit-dropdown">
+                <li className="drop-1">
+                  <Link to="/service_furniture">Мебель</Link>
+                </li>
+                <li className="drop-2">
+                  <Link to="/portfolio/windows/sub">Окна</Link>
+                </li>
+                <li className="drop-3">
+                  <Link to="/portfolio/parquet/sub">Паркет</Link>
+                </li>
+                <li className="drop-4">
+                  <Link to="/portfolio/stoneware/sub">Керамогранит</Link>
                 </li>
               </ul>
             </li>

@@ -61,6 +61,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin-right: 5rem;
 
   li {
     cursor: pointer;
@@ -83,7 +84,8 @@
     transition: 0.5s all ease;
     pointer-events: none;
 
-    a {
+    a,
+    h4 {
       font-size: 1.4rem;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -128,4 +130,8 @@
     opacity: 1;
     padding-left: 2rem;
   }
+}
+
+.addit-dropdown {
+  padding-left: 2rem;
 }
