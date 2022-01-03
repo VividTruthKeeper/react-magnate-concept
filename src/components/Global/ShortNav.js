@@ -10,9 +10,13 @@ import Logo from "../../images/main_logo.jpg";
 
 const ShortNav = ({ background, centerData }) => {
   const Dropdown = useRef();
+  const Dropdown2 = useRef();
+  const DropdownInner = useRef();
+  const DropdownSub = useRef();
   const DropHandler = (reference) => {
-    const object = reference.current;
-    object.classList.toggle("active");
+    reference.forEach((el) => {
+      el.current.classList.toggle("active");
+    });
   };
   const [isVisible, setIsVisible] = useState(false);
   const burger = useRef();
@@ -43,8 +47,18 @@ const ShortNav = ({ background, centerData }) => {
               <ul>
                 <li
                   className="service-dropdown"
-                  onClick={() => {
-                    DropHandler(Dropdown);
+                  onClick={(e) => {
+                    if (
+                      e.target === Dropdown2.current ||
+                      e.target === DropdownInner.current
+                    ) {
+                      return;
+                    }
+                    if (DropdownSub.current.classList.contains("active")) {
+                      DropHandler([Dropdown, DropdownSub]);
+                      return;
+                    }
+                    DropHandler([Dropdown]);
                   }}
                 >
                   <h4>Услуги</h4>
@@ -63,10 +77,27 @@ const ShortNav = ({ background, centerData }) => {
                     <li>
                       <Link to="/service_supervision">Авторский надзор</Link>
                     </li>
-                    <li>
-                      <Link to="/service_furniture">
+                    <li ref={Dropdown2}>
+                      <h4
+                        ref={DropdownInner}
+                        onClick={() => DropHandler([DropdownSub])}
+                      >
                         Мебель, материалы и элементы декора
-                      </Link>
+                      </h4>
+                    </li>
+                  </ul>
+                  <ul ref={DropdownSub} className="dropdown-sub">
+                    <li>
+                      <Link to="/service_furniture">Мебель</Link>
+                    </li>
+                    <li>
+                      <Link to="/portfolio/windows/sub">Окна</Link>
+                    </li>
+                    <li>
+                      <Link to="/portfolio/parquet/sub">Паркет</Link>
+                    </li>
+                    <li>
+                      <Link to="/portfolio/stoneware/sub">Керамогранит</Link>
                     </li>
                   </ul>
                 </li>
