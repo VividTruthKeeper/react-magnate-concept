@@ -4,6 +4,20 @@ html {
   a {
     text-decoration: none;
   }
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: $base-black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $base-pink;
+    border-radius: 1rem;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9e1c2e;
+  }
 }
 
 body {
