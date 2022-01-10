@@ -28,6 +28,7 @@ function App() {
   useEffect(() => {
     window.addEventListener("load", () => {
       setIsLoading(false);
+      window.scrollTo(0, 0);
     });
   }, []);
   const [isLoading, setIsLoading] = useState(true);
