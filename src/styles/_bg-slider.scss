@@ -35,7 +35,6 @@
   background-clip: content-box;
   background-size: cover;
   min-height: 90rem;
-  //   height: 100%;
   width: 100%;
   display: block;
 }
@@ -51,6 +50,7 @@
 }
 
 .slide__top {
+  z-index: -1;
   padding-left: 2rem;
   position: relative;
   display: flex;
